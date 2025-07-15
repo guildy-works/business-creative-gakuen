@@ -1,0 +1,20 @@
+.button {
+    height: 80px;
+    @apply flex items-center justify-center;
+}
+
+.left {
+    @apply flex items-center justify-center text-white pl-6 pr-2;
+    height: 80px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top: 42px solid transparent;
+    border-bottom: 42px solid transparent;
+    border-left: 30px solid #8c52ff;
+    border-right: 0;
+    margin-left: -1px;
+}

@@ -1,0 +1,17 @@
+
+.tooltip {
+    position: relative;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: white;
+
+    &:before {
+        margin-right: 0.1rem;
+        content: "＼";
+    }
+
+    &:after {
+        margin-left: 0.1rem;
+        content: "／";
+    }
+}

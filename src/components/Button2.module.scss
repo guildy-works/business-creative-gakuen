@@ -1,0 +1,18 @@
+.button {
+    @apply px-12 py-4;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 1rem;
+    background: linear-gradient(220deg, rgba(191, 95, 255, 1) 0%, rgba(255, 150, 80, 1) 100%);
+    box-shadow: 0 5px 0 rgb(184, 57, 162);
+
+    &:hover {
+        transform: translate(0, 3px);
+        box-shadow: 0 2px 0 rgb(184, 57, 162);
+    }
+}

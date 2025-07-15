@@ -1,0 +1,59 @@
+.button {
+    @apply w-full;
+
+    a {
+        @apply rounded-full flex items-center justify-center w-full text-white;
+        background: #4c25d8; 
+        position: relative;
+        line-height: 1.8;
+        text-decoration: none;
+        border-bottom: solid 5px #7b67ff;
+        transition: 0.3s ease-in-out;
+    }
+    a:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        right: 2rem;
+        font-size: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s;
+        width: 6px;
+        height: 6px;
+        border-top: solid 2px currentColor;
+        border-right: solid 2px currentColor;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    a:hover:after {
+        right: 1.4rem;
+    }
+    a:hover {
+        background: #2a0b91;
+        color: #fff;
+        border-bottom: solid 2px #999;
+        transform: translateY(3px);
+    }
+    a:hover:before {
+        color: #fff;
+    }
+}
+
+.tooltip {
+    position: relative;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #4d23c9;
+
+    &:before {
+        margin-right: 1rem;
+        content: "＼";
+    }
+
+    &:after {
+        margin-left: 1rem;
+        content: "／";
+    }
+}

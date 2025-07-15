@@ -1,0 +1,58 @@
+
+.balloon_container {
+    position: absolute;
+    top: -4px;
+    line-height: 5em;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+    font-family: "Noto Sans JP", serif;
+}
+
+.balloon {
+    text-align: center;
+    color: #3616a8;
+    font-size: 12px;
+    font-weight: bold;
+    background: #ffffff;
+    border: 3px solid #50149e;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    transform: rotate(0deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.balloon3 {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    background: #8152fa;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    transform: rotate(0deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.balloon2 {
+    position: absolute;
+    content: "";
+    font-weight: bold;
+    bottom: 0px;
+    right: -10px;
+    border: 9px solid #0000;
+    border-left: 15px solid #3616a8;
+    transform: rotate(34deg);
+    z-index: 0;
+}

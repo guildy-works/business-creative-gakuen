@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "rounded-mplus-1c";
+    src: url("/rounded-mplus-1c-bold.woff");
+}
+
+@font-face {
+    font-family: "Slight";
+    src: url("/Slight.woff");
+}
+
+body,
+html {
+    color: rgb(var(--foreground-rgb));
+    background: #ffffff;
+    @apply text-size-p text-font1;
+    font-family: "Noto Sans JP", serif;
+    scroll-behavior: smooth;
+}
+
+p,
+div {
+    @apply text-size-p;
+}
+
+::selection {
+    @apply bg-color1/70 text-font1;
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+:root {
+    --bg-gradient-opacity: linear-gradient(24deg, #bf5fffbd 0%, #ff9650be 100%);
+    --bg-gradient1: linear-gradient(90deg, rgba(191, 95, 255, 1) 0%, rgba(255, 150, 80, 1) 100%);
+}
+
+.bg-gradient-opacity {
+    background: var(--bg-gradient-opacity);
+}
+.bg-gradient5 {
+    background: linear-gradient(90deg, #ac32fe98 0%, #ff761b99 100%);
+}
+
+.bg-gradient1 {
+    background: var(--bg-gradient1);
+}
+
+.bg-gradient2 {
+    background: linear-gradient(202deg, rgba(255, 126, 233, 1) 0%, rgba(250, 146, 77, 1) 100%);
+}
+
+.bg-gradient3 {
+    background: linear-gradient(90deg, #f1eea6 0%, #51cbe7 100%);
+}
+
+.bg-gradient4 {
+    background: linear-gradient(30deg, rgba(252, 252, 135, 1) 0%, rgba(235, 108, 92, 1) 100%);
+}
+
+.bg-gradient6 {
+    background: linear-gradient(30deg, #ffdd58 0%, #fe924e 100%);
+}
+
+.link {
+    font-size: 0.8rem;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.active {
+    @apply pl-3;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 16px;
+        height: 1px;
+        background-color: black;
+        transform: rotate(-65deg);
+        transform-origin: left bottom;
+    }
+}
+
+.html-editor {
+    @apply gap-2 bg-color1 rounded-lg;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        @apply text-color2;
+        color: #000;
+        text-decoration: underline;
+    }
+
+    p {
+        @apply text-size1;
+    }
+
+    h1 {
+        @apply text-title1;
+    }
+
+    h2 {
+        @apply text-title2;
+    }
+
+    h3 {
+        @apply text-title3;
+    }
+
+    h4 {
+        @apply text-title4;
+    }
+}
