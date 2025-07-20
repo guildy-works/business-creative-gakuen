@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+<<<<<<< HEAD
     "build:optimize": "next build && next-export-optimize-images",
+=======
+>>>>>>> 15f08e80f6dfa0151f57644869c3535c6b80d108
     "start": "next start",
     "lint": "next lint"
   },
