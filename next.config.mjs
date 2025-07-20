@@ -14,7 +14,6 @@ const nextConfig = {
 
 };
 
-<<<<<<< HEAD
 // CI環境では画像最適化プラグインを無効化
 const isCI = process.env.CI === 'true' || process.env.GITHUB_ACTIONS === 'true';
 
@@ -27,6 +26,3 @@ if (isCI) {
 }
 
 export default config;
-=======
-export default (nextConfig);
->>>>>>> 15f08e80f6dfa0151f57644869c3535c6b80d108
