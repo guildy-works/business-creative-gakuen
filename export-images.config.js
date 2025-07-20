@@ -6,10 +6,7 @@ const config = {
         ['png', 'webp'],
         ['jpg', 'webp'],
     ],
-    // ファイルパスの問題を回避するための設定
-    filenameGenerator: ({ path, name, width, quality, extension }) => {
-        return `${name}.${extension}`;
-    },
+    basePath: '/tsunagaru-lab-new',
 }
 
 module.exports = config
