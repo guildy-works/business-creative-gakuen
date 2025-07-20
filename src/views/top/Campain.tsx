@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { motion } from "motion/react";
 import css from "@/components/Balloon.module.scss"
 import Image from 'next-export-optimize-images/picture';
+import Link from "next/link";
 
 export const Campaign = () => <>
     <div className="flex gap-4">
@@ -25,15 +26,15 @@ export const Campaign = () => <>
                         <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
                     </svg>
                     <SkewScrollTriggerAnimation tag="h3" skewPanelClass="!bg-black" className="text-size2 text-white relative">
-                        メンバーになる
+                        <Link href={resources.links.line} target="_blank" rel="noopener noreferrer">メンバーになる</Link>
                     </SkewScrollTriggerAnimation>
                 </div>
-                <div  className="flex items-center gap-2">
+                <div className="flex items-center gap-2">
                     <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                       
+
                     </svg>
                     <SkewScrollTriggerAnimation tag="h3" skewPanelClass="!bg-black" className="text-size2 text-white mt-1">
-                        逃げる
+                        <Link href={resources.links.line} target="_blank" rel="noopener noreferrer">逃げる</Link>
                     </SkewScrollTriggerAnimation>
                 </div>
             </div>
