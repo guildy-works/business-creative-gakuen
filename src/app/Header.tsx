@@ -19,7 +19,7 @@ export const menuItems: MenuItem[] = [
     { href: "/", label: "TOP" },
     { href: "/mission", label: "ミッション" },
     { href: "/mission#orner", label: "オーナー挨拶" },
-    { href: "/#about", label: "つながるラボでできること" },
+    { href: "/#about", label: "中四国クリエイティブ学園でできること" },
     { href: "/#plans", label: "料金プラン" },
 
     { href: "/#contacts", label: "お問い合わせ" },
@@ -193,7 +193,7 @@ const Drawer = ({ isOpen, setIsOpen, children }: React.PropsWithChildren<Props>)
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <Image className="mb-8" src={Logo} alt="つながるラボ" width={120} height={120} loading="lazy" />
+                        <Image className="mb-8" src={Logo} alt="中四国クリエイティブ学園" width={120} height={120} loading="lazy" />
                     </motion.div>
 
                     <SnsLinkList />

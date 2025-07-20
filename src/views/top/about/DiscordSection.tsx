@@ -19,7 +19,7 @@ export const DiscordSection = () => {
                 <h2 className="text-white text-center mb-2 text-title1">コミュニティの様子</h2>
 
                 <p className="text-center text-white text-title3 mt-2 leading-[2.4rem]">
-                    つながるラボでは<br/>
+                    中四国クリエイティブ学園では<br/>
                     <Link href={resources.links.discordOfficial} target="_blank" className="text-color10 underline">
                         Discord
                     </Link>
@@ -32,7 +32,7 @@ export const DiscordSection = () => {
                     <div className="flex items-center gap-3">
                         <Image src={Discord} alt="Line" className="w-12" />
                         <div className="flex flex-col items-center text-center gap-0 text-[1.2rem] leading-[1.6rem]">
-                            <big className="pr-2">つながるラボを覗く</big>
+                            <big className="pr-2">中四国クリエイティブ学園を覗く</big>
                             <span className="pr-8 mt-1"> (招待を受ける)</span>
                         </div>
                     </div>

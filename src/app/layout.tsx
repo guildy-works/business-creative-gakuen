@@ -21,8 +21,8 @@ export default function RootLayout({
     return (
         <html lang="ja" >
             <head>
-                <title>{"つながるラボ"}</title>
-                <meta name="description" content="つながるラボは中四国地方専用のビジネスオンラインコミュニティです。フリーランス、経営者、大学生や社会人、独立を目指す方が集まり、人脈作りやスキルアップ、集客、地域課題解決に取り組みます。無料プランから始められ、イベントやセミナーも充実！LINE登録でお得なキャンペーン実施中！"/>
+                <title>{"中四国クリエイティブ学園"}</title>
+                <meta name="description" content="中四国クリエイティブ学園（CSCC）は、広島・岡山・山口・島根・鳥取・愛媛・香川・徳島・高知のフリーランスと経営者とクリエイターが交流会・セミナー・イベントで人脈を広げスキルアップを目指すオンラインサロンです。"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic:wght@900&display=swap" rel="stylesheet" />
