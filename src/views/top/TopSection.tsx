@@ -1,11 +1,7 @@
-import TopImage from "@/assets/top.png";
-import RoseImage from "@/assets/rose.png";
 import Link from "next/link";
 import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/FadeAndSlideScrollTriggerAnimation";
-import Kon1Image from '@/assets/kon6.jpg';
 import Balloon from '@/assets/balloon.png';
 import Inspire from '@/assets/Inspire.png';
-import Bg1_Mobile from '@/assets/top_mobile.jpg';
 import Image from 'next-export-optimize-images/picture';
 import { TopArt } from "./TopArts";
 import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation";

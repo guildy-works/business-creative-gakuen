@@ -6,7 +6,7 @@ import { DOMMotionComponents, motion, useInView } from "motion/react"
 import { resources } from '@/resources';
 import Instagram from '@/assets/sns/Instagram.svg'
 
-export const SnsLinkList = ({ disableMessage }: { disableMessage?: boolean }) => {
+export const SnsLinkList = () => {
     return (
         <div className="flex gap-2 md:gap-4 flex-wrap justify-center p-6">
             <motion.a

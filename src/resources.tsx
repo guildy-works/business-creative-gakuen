@@ -5,19 +5,8 @@ import 宮本 from '@/assets/members/宮本.jpg'
 import たけうちまりえ from '@/assets/members/たけうちまりえ.jpg'
 import 早川優衣 from '@/assets/members/早川優衣.jpg'
 
-import Issue1 from "@/assets/issue1.svg";
-import Issue2 from "@/assets/issue2.svg";
-import Issue3 from "@/assets/issue3.svg";
-import Issue4 from "@/assets/issue4.svg";
-import Issue5 from "@/assets/issue5.svg";
-import Issue6 from "@/assets/issue6.svg";
-import Issue7 from "@/assets/issue7.svg";
-import Issue8 from "@/assets/issue8.svg";
-import Balloon1 from "@/assets/balloon1.svg";
-import CommingSoon from "@/assets/comming-soon.svg";
-
 export const resources = {
-    siteTitle: "中四国クリエイティヴ学園",
+    siteTitle: "中四国クリエイティブ学園",
     top: {
         topTitle: "#アイデア、爆上げ",
     },
@@ -140,69 +129,6 @@ export const resources = {
                 県内外のイベントで歌まねをしている
             </>,
             image: たけうちまりえ
-        },
-    ],
-    introduces: [
-        {
-            num: "01",
-            title: <>中四国の<br />⼈脈がつながる</>,
-            content: <>
-                交流会や各種イベントの開催<br />
-                チャット上での交流<br />
-                フリーランス、経営者、<br />
-                学生や社会人とつながる
-            </>,
-            image: Issue1,
-        },
-        {
-            num: "02",
-            title: <>中四国で<br />集客や採⽤につながる</>,
-            content: <>
-                求人や案件、仕事の受発注<br />
-                マルシェなどのイベント<br />
-                商品やサービスの宣伝し放題
-            </>,
-            image: Issue7,
-        },
-        {
-            num: "03",
-            title: <>中四国で<br />スキルアップにつながる</>,
-            content: <>
-                朝活やセミナーの開催<br />
-                スキルやノウハウなど<br />
-                色んな情報をメンバー同士でシェア
-            </>,
-            image: Issue6,
-        },
-        {
-            num: "04",
-            title: <>中四国の<br />情報がつながる</>,
-            content: <>
-                中四国のリアルやトレンド<br />
-                有益情報を受け取ることができる<br />
-                情報を投稿すれば賞⾦が貰えるゲームも開催
-            </>,
-            image: Issue5,
-        },
-        // {
-        //     num: "05",
-        //     title: "中四国を盛り上げられる",
-        //     content: <>
-        //         行政や民間と協力、協業して<br />
-        //         各メンバーの力と知恵で<br />
-        //         地域資源、問題、経済の課題解決に取り組む
-        //     </>,
-        //     image: Issue4,
-        // },
-        {
-            num: "05",
-            title: "経済圏の構築",
-            content: <>
-                あのキャラクターがNFTに？<br />
-                デジタルトークンを活用した地域創生
-            </>,
-            image: Issue8,
-            baloon: CommingSoon,
         },
     ],
 }

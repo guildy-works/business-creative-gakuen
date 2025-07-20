@@ -4,9 +4,8 @@ import css from "./Button2.module.scss"
 import { DOMMotionComponents, motion, useInView } from "motion/react"
 import { MdPlayCircleFilled } from "react-icons/md"
 
-export const Button2 = ({ children, subTitle, className, href }: {
+export const Button2 = ({ children, className, href }: {
     children?: ReactNode,
-    subTitle?: string,
     className?: string,
     href: string
 }) => {

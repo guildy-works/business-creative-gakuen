@@ -1,11 +1,9 @@
-import { Button2 } from "@/components/Button2";
 import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation";
 import { resources } from "@/resources";
 import styles from "@/components/Strong.module.scss"
 import clsx from "clsx";
 import { motion } from "motion/react";
 import css from "@/components/Balloon.module.scss"
-import Lines3 from "@/assets/lines3.png"
 import Image from 'next-export-optimize-images/picture';
 
 export const Campaign = () => <>

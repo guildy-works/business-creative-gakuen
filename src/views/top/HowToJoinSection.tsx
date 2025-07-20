@@ -3,10 +3,6 @@ import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimatio
 import { ReactNode } from "react"
 import { StaticImageData } from "next/image";
 import Image from 'next-export-optimize-images/picture';
-import Join1 from "@/assets/join1.png";
-import Join2 from "@/assets/join2.png";
-import Join3 from "@/assets/join3.png";
-import Join4 from "@/assets/join4.png";
 import clsx from "clsx";
 
 const data = [
@@ -14,7 +10,6 @@ const data = [
     {
         num: "01",
         title: "公式LINEの追加",
-        img: Join1,
         content: <>
             中四国ビジクリ学園の<br />
             公式LINEを追加
@@ -23,7 +18,6 @@ const data = [
     {
         num: "02",
         title: "申し込み",
-        img: Join2,
         content: <>
             Discordの確認をするために<br />
             照合フォームへ回答
@@ -32,7 +26,6 @@ const data = [
     {
         num: "03",
         title: <>コミュニティへ招待</>,
-        img: Join3,
         content: <>
             申し込み確認ができたら<br />
             Discordサーバーへ招待
@@ -41,7 +34,6 @@ const data = [
     {
         num: "04",
         title: "正式メンバーへ",
-        img: Join4,
         content: <>
             おめでとうございます<br />
             今日からメンバーです
@@ -60,7 +52,6 @@ export const HowToJoinSection = () => {
                 data.map((x, i) =>
                     <IntroduceItem
                         isLast={i === data.length - 1}
-                        src={x.img}
                         key={i}
                         num={x.num}
                         delay={i * 200}

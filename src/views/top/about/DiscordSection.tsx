@@ -1,14 +1,9 @@
 import { SectionType1 } from "@/components/SectionType1"
 import Image from 'next-export-optimize-images/picture';
-import { ButtonRightArrow } from "@/components/ButtonRightArrow";
 import { motion } from "motion/react";
 import Link from "next/link";
-import Line from '@/assets/sns/LINE.svg'
-import ReccomendsBalloon from '@/assets/recommends-balloon.png'
-import Discord from '@/assets/sns/Discord.svg'
 import DiscordPng from '@/assets/discord.png'
 import { resources } from "@/resources";
-import { MdEmail } from "react-icons/md";
 
 export const DiscordSection = () => {
 

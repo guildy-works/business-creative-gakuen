@@ -6,7 +6,6 @@ import Profile from "@/assets/profile.webp";
 import { motion } from "motion/react";
 import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation";
 import { Button } from "@headlessui/react";
-import { Button2 } from "@/components/Button2";
 import { Button3 } from "@/components/Button3";
 
 export const ProfileSection = () => <SectionBox className={clsx(

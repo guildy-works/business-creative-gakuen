@@ -1,19 +1,9 @@
-import Part1 from '../../assets/top-parts/img1.svg'
-import Part2 from '../../assets/top-parts/img2.svg'
-import Part3 from '../../assets/top-parts/img3.svg'
-import Part4 from '../../assets/top-parts/img4.svg'
-import Part5 from '../../assets/top-parts/img5.svg'
-import Part6 from '../../assets/top-parts/img6.svg'
-import Part7 from '../../assets/top-parts/img7.svg'
-import Part8 from '../../assets/top-parts/img8.svg'
-import Part9 from '../../assets/top-parts/img9.svg'
 import Grassland2 from '../../assets/grassland2.png'
 import Logo2 from "@/assets/logo2.png";
 import { motion } from 'motion/react';
 import Image from 'next-export-optimize-images/picture';
 import { SkewScrollTriggerAnimation } from '@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation'
 import { SectionType1 } from '@/components/SectionType1'
-import { Button2 } from '@/components/Button2'
 import { resources } from '@/resources'
 import { Campaign } from './Campain'
 import css from "@/components/Balloon.module.scss"

@@ -114,7 +114,7 @@ export const Header = () => {
                 <Link
                     href={resources.links.line}
                     target='_blank'
-                    className="md:hidden ml-auto min-w-32 mr-3 gap-2 rounded-lg flex items-center justify-center bg-color2 py-2 px-4 font-semibol shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-color2/80">
+                    className="md:hidden font-dot ml-auto min-w-32 mr-3 gap-2 rounded-lg flex items-center justify-center bg-color2 py-2 px-4 font-semibol shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-color2/80">
                     入会はコチラ
                 </Link>
 

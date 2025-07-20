@@ -9,7 +9,6 @@ import { PlanTable } from "./PlanTable";
 import { motion } from "motion/react"
 import { resources } from "@/resources";
 import { HighlightMarker } from "@/components/HighlightMarker";
-import { Button4 } from "@/components/Button4";
 import Image from 'next-export-optimize-images/picture';
 import character1 from "@/assets/character3.png";
 import character2 from "@/assets/character2.png";
