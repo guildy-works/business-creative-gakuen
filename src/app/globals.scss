@@ -4,22 +4,22 @@
 
 @font-face {
     font-family: "rounded-mplus-1c";
-    src: url("/rounded-mplus-1c-bold.woff");
+    src: url("/tsunagaru-lab-new/rounded-mplus-1c-bold.woff");
 }
 
 @font-face {
     font-family: "Slight";
-    src: url("/Slight.woff");
+    src: url("/tsunagaru-lab-new/Slight.woff");
 }
 
 @font-face {
     font-family: "BestTen-DOT";
-    src: url("/BestTen-DOT.otf");
+    src: url("/tsunagaru-lab-new/BestTen-DOT.otf");
 }
 
 @font-face {
     font-family: "nicokaku";
-    src: url("/nicokaku_v2-5.ttf");
+    src: url("/tsunagaru-lab-new/nicokaku_v2-5.ttf");
 }
 
 body,
@@ -46,40 +46,8 @@ div {
     }
 }
 
-:root {
-    --bg-gradient-opacity: linear-gradient(24deg, #bf5fffbd 0%, #ff9650be 100%);
-    --bg-gradient1: linear-gradient(90deg, rgba(191, 95, 255, 1) 0%, rgba(255, 150, 80, 1) 100%);
-}
-
-.bg-gradient-opacity {
-    background: var(--bg-gradient-opacity);
-}
-.bg-gradient5 {
-    background: linear-gradient(90deg, #ac32fe98 0%, #ff761b99 100%);
-}
-
-.bg-gradient1 {
-    background: var(--bg-gradient1);
-}
-
-.bg-gradient2 {
-    background: linear-gradient(202deg, rgba(255, 126, 233, 1) 0%, rgba(250, 146, 77, 1) 100%);
-}
-
-.bg-gradient3 {
-    background: linear-gradient(90deg, #f1eea6 0%, #51cbe7 100%);
-}
-
-.bg-gradient4 {
-    background: linear-gradient(30deg, rgba(252, 252, 135, 1) 0%, rgba(235, 108, 92, 1) 100%);
-}
-
-.bg-gradient6 {
-    background: linear-gradient(30deg, #ffdd58 0%, #fe924e 100%);
-}
-
 .bg-image {
-    background-image: url("/background1.png");
+    background-image: url("/tsunagaru-lab-new/background1.png");
     background-size: contain;
     background-position: center;
     background-repeat: repeat-y;
@@ -87,42 +55,50 @@ div {
 
 .bg-image2 {
     background-color: #29adff;
-    background-image: url("/background2.png");
+    background-image: url("/tsunagaru-lab-new/background2.png");
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
 }
 
 .bg-image3 {
-    background-image: url("/background3.png");
+    background-image: url("/tsunagaru-lab-new/background3.png");
     background-size: contain;
     background-position: top;
     background-repeat: repeat;
 }
 
 .bg-image4 {
-    background-image: url("/background4.png");
+    background-image: url("/tsunagaru-lab-new/background4.png");
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat ;
 }
 
 .bg-image5 {
-    background-image: url("/contact-background2.png");
+    background-image: url("/tsunagaru-lab-new/contact-background2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat-x ;
+}
+
+
+.bg-image6 {
+    background-image: url("/tsunagaru-lab-new/background5.png");
     background-size: cover;
     background-position: center;
     background-repeat:repeat-x ;
 }
 
 .bg-button1 {
-    background-image: url("/button1.png");
+    background-image: url("/tsunagaru-lab-new/button1.png");
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat;
 }
 
 .bg-button2 {
-    background-image: url("/button2.png");
+    background-image: url("/tsunagaru-lab-new/button2.png");
     background-size: auto;
     background-position: center;
     background-repeat:no-repeat;
@@ -150,35 +126,22 @@ div {
     }
 }
 
-.html-editor {
-    @apply gap-2 bg-color1 rounded-lg;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-
-    a {
-        @apply text-color2;
-        color: #000;
-        text-decoration: underline;
-    }
-
-    p {
-        @apply text-size1;
-    }
-
-    h1 {
-        @apply text-title1;
-    }
-
-    h2 {
-        @apply text-title2;
-    }
-
-    h3 {
-        @apply text-title3;
-    }
-
-    h4 {
-        @apply text-title4;
-    }
+.typing-effect {
+  width: 290px;
+  animation: typing 3s steps(29), effect .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+ 
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes effect {
+  50% {
+    border-color: transparent
+  }
 }

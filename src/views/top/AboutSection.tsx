@@ -1,11 +1,4 @@
 import { BlackTextBox } from "@/components/BlackTextBox";
-import { DiscordSection } from "./about/DiscordSection";
-import { IntroduceSection } from "./about/IntroduceSection";
-import { MembersSection } from "./about/MembersSection";
-import { OnayamiSection } from "./about/OnayamiSection";
-import { PlansSection } from "./about/PlansSection";
-import { ProfileSection } from "./about/ProfileSection";
-import background1 from "@/assets/background1.png";
 import decoration1 from "@/assets/decoration1.png";
 import Image from 'next-export-optimize-images/picture';
 import { NumberBorderBox } from "@/components/NumberBorderBox";
@@ -16,8 +9,14 @@ import Text03 from "@/assets/03.png";
 import Text04 from "@/assets/04.png";
 import Text05 from "@/assets/05.png";
 
-import フリー商談会 from "@/assets/フリー商談会.png";
-
+import About01 from "@/assets/about01.png";
+import About02 from "@/assets/about02.png";
+import About03 from "@/assets/about03.png";
+import About04 from "@/assets/about04.png";
+import About05 from "@/assets/フリー商談会.png";
+import About06 from "@/assets/about06.png";
+import Link from "next/link";
+import { resources } from "@/resources";
 
 export default function AboutSection() {
     return (
@@ -108,7 +107,7 @@ export default function AboutSection() {
                             </p>
                         </div>
                         <div className="flex flex-col">
-
+                            <Image src={About01} alt="About01" className="w-48" />
                         </div>
                     </div>
                 </NumberBorderBox>
@@ -124,7 +123,7 @@ export default function AboutSection() {
                             </p>
                         </div>
                         <div className="flex flex-col px-1 w-60">
-                            <Image src={フリー商談会} alt="Free Business Meeting" />
+                            <Image src={About02} alt="Free Business Meeting" />
                         </div>
                     </div>
                 </NumberBorderBox>
@@ -139,7 +138,7 @@ export default function AboutSection() {
                             </p>
                         </div>
                         <div className="flex flex-col px-1 w-60">
-                            <Image src={フリー商談会} alt="Free Business Meeting" />
+                            <Image src={About03} alt="Free Business Meeting" />
                         </div>
                     </div>
                 </NumberBorderBox>
@@ -155,7 +154,7 @@ export default function AboutSection() {
                             </p>
                         </div>
                         <div className="flex flex-col px-1 w-60">
-                            <Image src={フリー商談会} alt="Free Business Meeting" />
+                            <Image src={About04} alt="Free Business Meeting" />
                         </div>
                     </div>
                 </NumberBorderBox>
@@ -171,7 +170,22 @@ export default function AboutSection() {
                             </p>
                         </div>
                         <div className="flex flex-col px-1 w-60">
-                            <Image src={フリー商談会} alt="Free Business Meeting" />
+                            <Image src={About05} alt="Free Business Meeting" />
+                        </div>
+                    </div>
+                </NumberBorderBox>
+
+                <NumberBorderBox className="w-full">
+                    <div className="flex flex-col p-2 items-center justify-center">
+                        <div className="flex flex-col px-1 items-center justify-center text-center">
+                            <h3 className="pb-2 text-title3 font-bold">実際の様子</h3>
+                            <p className="text-size-p mt-2 font-bold leading-4">
+                               <Link href={resources.links.discordOfficial} target="_blank" className="text-color10 underline" rel="noopener noreferrer">Discord</Link>
+                                という無料アプリを使用します
+                            </p>
+                        </div>
+                        <div className="flex flex-col px-1 w-96 mt-3">
+                            <Image src={About06} alt="Free Business Meeting" />
                         </div>
                     </div>
                 </NumberBorderBox>

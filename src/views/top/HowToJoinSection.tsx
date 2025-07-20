@@ -77,14 +77,14 @@ const IntroduceItem = ({ title, content, delay, num, src, isLast }: {
         <FadeAndSlideScrollTriggerAnimation
             delay={0.2}
             className={clsx(
-                "h-full flex flex-col gap-4 relative  pb-8 text-white font-dot",
+                "max-w-80 w-full mx-auto h-full flex flex-col gap-4 relative  pb-8 text-white font-dot",
                 isLast ? "" : "border-x-2 border-white border-dotted"
             )}
         >
             <div className=" bg-white size-4 flex justify-center items-center absolute left-0  -translate-x-1/2"></div>
             <div className="bg-white size-4 flex justify-center items-center absolute right-0  translate-x-1/2"></div>
 
-            <div className="flex flex-wrap w-fit pr-4">
+            <div className="flex flex-wrap pr-4">
                 <div className="ml-8 -mt-2">
                     <h3 className="h-8 flex items-center text-title3 text-color3">
                         <small className="mr-4">STEP</small> {num}

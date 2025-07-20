@@ -45,7 +45,7 @@ export const MembersSection2 = () => {
 
             </Splide>
 
-            <p className="font-dot">
+            <p className="font-dot text-center text-title4 leading-5">
                 フリーランス、経営者、<br />
                 インフルエンサー、アフィリエイターなど<br />
                 色んなクリエイターがいます

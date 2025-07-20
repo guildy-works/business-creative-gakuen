@@ -1,7 +1,7 @@
-import Part5 from '../../assets/top-parts/img5.svg'
-import Part6 from '../../assets/top-parts/img6.svg'
-import Part7 from '../../assets/top-parts/img7.svg'
-import Part8 from '../../assets/top-parts/img8.svg'
+import Part1 from '../../assets/01.png'
+import Part2 from '../../assets/02.png'
+import Part3 from '../../assets/03.png'
+import Part4 from '../../assets/04.png'
 
 import { motion } from 'motion/react';
 import Image from 'next-export-optimize-images/picture';
@@ -16,7 +16,7 @@ export const MissionTopArt = () => {
                 initial={{ translateY: "-100%", opacity: 0 }}
                 animate={{ translateY: 0, opacity: 1 }}
                 className='absolute top-0 left-0 inset-0 flex justify-center items-center'>
-                <Image src={Part5} alt="art1" className="size-full object-cover" />
+                <Image src={Part1} alt="ミッション画像1" className="size-full object-cover" />
             </motion.div>
 
             <motion.div
@@ -24,7 +24,7 @@ export const MissionTopArt = () => {
                 initial={{ translateY: "-100%", opacity: 0 }}
                 animate={{ translateY: 0, opacity: 1 }}
                 className='absolute top-0 left-0 inset-0 flex justify-center items-center'>
-                <Image src={Part6} alt="art1" className="size-full object-cover" />
+                <Image src={Part2} alt="ミッション画像2" className="size-full object-cover" />
             </motion.div>
 
             <motion.div
@@ -32,7 +32,7 @@ export const MissionTopArt = () => {
                 initial={{ translateY: "-100%", opacity: 0 }}
                 animate={{ translateY: 0, opacity: 1 }}
                 className='absolute top-0 left-0 inset-0 flex justify-center items-center'>
-                <Image src={Part7} alt="art1" className="size-full object-cover" />
+                <Image src={Part3} alt="ミッション画像3" className="size-full object-cover" />
             </motion.div>
 
             <motion.div
@@ -40,7 +40,7 @@ export const MissionTopArt = () => {
                 initial={{ translateY: "-100%", opacity: 0 }}
                 animate={{ translateY: 0, opacity: 1 }}
                 className='absolute top-0 left-0 inset-0 flex justify-center items-center'>
-                <Image src={Part8} alt="art1" className="size-full object-cover" />
+                <Image src={Part4} alt="ミッション画像4" className="size-full object-cover" />
             </motion.div>
         </div>
 

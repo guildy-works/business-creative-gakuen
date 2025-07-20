@@ -2,11 +2,8 @@ import Grassland2 from '../../assets/grassland2.png'
 import Logo2 from "@/assets/logo2.png";
 import { motion } from 'motion/react';
 import Image from 'next-export-optimize-images/picture';
-import { SkewScrollTriggerAnimation } from '@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation'
-import { SectionType1 } from '@/components/SectionType1'
 import { resources } from '@/resources'
 import { Campaign } from './Campain'
-import css from "@/components/Balloon.module.scss"
 import { use, useEffect, useState } from 'react'
 import { FadeAndSlideScrollTriggerAnimation } from '@/libs/ScrollTriggerAnimations/FadeAndSlideScrollTriggerAnimation'
 
@@ -72,9 +69,9 @@ const Mobile = () => <div >
                 </FadeAndSlideScrollTriggerAnimation>
 
                 <div className='flex'>
-                    <div>
+                    <FadeAndSlideScrollTriggerAnimation>
                         <Image src={Logo2} alt="Logo2" className="w-32 h-32 object-cover" />
-                    </div>
+                    </FadeAndSlideScrollTriggerAnimation>
                     <DiscordWidget />
                 </div>
 

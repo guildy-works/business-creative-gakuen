@@ -1,12 +1,53 @@
-import { SectionBox } from "@/components/SectionBox"
 import { MembersSection2 } from "./MembersSection.member2";
-import { Campaign } from "../Campain";
-import { motion } from "motion/react";
+import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/FadeAndSlideScrollTriggerAnimation";
+import Profile from '@/assets/中四国クリエイティブ学園 1.png'
+import Image from 'next-export-optimize-images/picture';
 
 export const MembersSection = () => {
-    return <SectionBox disablePx disableMaxWidth className="!my-0">
-        <div className="w-full flex flex-col items-center mx-auto gap-4 justify-center">
-            <MembersSection2 />
+    return <div className="">
+        <MembersSection2 />
+
+        <div className="flex flex-col bg-image6 w-full ">
+            <FadeAndSlideScrollTriggerAnimation
+                className="relative mx-auto text-title2 px-16 font-bold font-dot bg-black text-white p-4 rounded-xl border-4 border-white">
+                学園長があらわれた！
+                <svg
+                    className="rotate-90 absolute bottom-0 right-4"
+                    width="12" height="12"
+                    viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
+                </svg>
+            </FadeAndSlideScrollTriggerAnimation>
+
+            <div className="flex flex-col px-8  py-8">
+                <FadeAndSlideScrollTriggerAnimation
+                    className="ml-32">
+                    <Image src={Profile} alt="中四国 クリエイティブ学園　学園長　小早川" />
+                </FadeAndSlideScrollTriggerAnimation>
+                <FadeAndSlideScrollTriggerAnimation
+                    className="relative -mt-10 z-10 text-title2 p-8 font-bold bg-black text-white font-dot border-4 border-color2">
+                    <div>
+                        ココは学園ではありません。RPGです。<br />
+                        「スキルアップするコミュニティ」です。<br /><br />
+
+                        あなたはこのコミュニティの主人公。<br /><br />
+
+                        <span className="text-red-700">どんなビジネスでもクリエイティブな発想は必要不可欠。</span><br /><br />
+
+                        中四国で活躍する経営者やフリーランス、同業種と繋がり<br />
+                        交流から生まれる新しいアイデアで、スキルアップしましょう。
+                    </div>
+
+                    <div className="z-10 absolute -top-2 -translate-y-1/2 p-2 border-4 border-color2 bg-black">
+                        コメント
+                    </div>
+
+                    <div className="z-10 absolute left-1 top-1 size-2 bg-white" />
+                    <div className="z-10 absolute right-1 top-1 size-2 bg-white" />
+                    <div className="z-10 absolute left-1 bottom-1 size-2 bg-white" />
+                    <div className="z-10 absolute right-1 bottom-1 size-2 bg-white" />
+                </FadeAndSlideScrollTriggerAnimation>
+            </div>
         </div>
-    </SectionBox>
+    </div>
 }

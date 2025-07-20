@@ -7,6 +7,7 @@ import Logo from "@/assets/logo.png";
 import Image from 'next-export-optimize-images/picture';
 import { DOMMotionComponents, motion } from "motion/react"
 import { resources } from '@/resources';
+import Line from '@/assets/sns/LINE.svg'
 
 type MenuItem = {
     href: string;
@@ -32,7 +33,7 @@ export const Header = () => {
             <header className="flex w-full items-center sticky top-0 mt-0 z-50 border-b bg-black">
                 <Link href="/" className='p-2 flex items-center'>
                     <Image src={Logo} alt="Logo" width={200} className='w-[24px] md:w-[32px]' />
-                   <span className='text-[1.1rem] tracking-wide sm:text-[2.1rem] text-white ml-2 font-dot'>{resources.siteTitle}</span> 
+                    <span className='text-[1.1rem] tracking-wide sm:text-[2.1rem] text-white ml-2 font-dot'>{resources.siteTitle}</span>
                 </Link>
 
                 {/* Desktop */}
@@ -114,8 +115,10 @@ export const Header = () => {
                 <Link
                     href={resources.links.line}
                     target='_blank'
-                    className="md:hidden font-dot ml-auto min-w-32 mr-3 gap-2 rounded-lg flex items-center justify-center bg-color2 py-2 px-4 font-semibol shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-color2/80">
+                    className="md:hidden font-dot ml-auto min-w-32 mr-3 gap-2 rounded-lg flex items-center justify-center bg-color2 py-1 px-4 font-semibol shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-color2/80">
                     入会はコチラ
+
+                    <Image src={Line} alt="Line" className="w-6" />
                 </Link>
 
                 {/* Mobile */}

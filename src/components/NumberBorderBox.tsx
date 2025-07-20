@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { StaticImageData } from "next/image";
 import Image from 'next-export-optimize-images/picture';
 
-export const NumberBorderBox = ({ children, className, innerClassName, numberText }: { numberText: StaticImageData, children: React.ReactNode, className?: string, innerClassName?: string }) => {
+export const NumberBorderBox = ({ children, className, innerClassName, numberText }: { numberText?: StaticImageData, children: React.ReactNode, className?: string, innerClassName?: string }) => {
     return (
         <motion.div
             viewport={{ once: true }}
@@ -23,10 +23,12 @@ export const NumberBorderBox = ({ children, className, innerClassName, numberTex
             <div className={`rounded-lg border-4 border-color2  pt-6 bg-white ${innerClassName}`}>
                 {children}
             </div>
-            <div style={{ WebkitTextStroke: "1px black" }}
-                className="text-4xl font-bold font-dot absolute text-color2 -top-1 left-5" >
-                <Image src={numberText} alt="Number" className="h-8 w-8" />
-            </div>
+            {numberText &&
+                <div style={{ WebkitTextStroke: "1px black" }}
+                    className="text-4xl font-bold font-dot absolute text-color2 -top-1 left-5" >
+                    <Image src={numberText} alt="Number" className="h-8 w-8" />
+                </div>
+            }
         </motion.div>
     );
 }

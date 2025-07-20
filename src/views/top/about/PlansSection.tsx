@@ -58,10 +58,10 @@ export const PlansSection = () => {
                     />
                 </div>
             </div>
-
+{/* 
             <ServiceDialog buttonText="詳細" >
                 <PlanTable />
-            </ServiceDialog>
+            </ServiceDialog> */}
         </SectionBox>
     )
 }
@@ -90,7 +90,8 @@ const PlanItem = ({ title, price, content, delay, imageClass, href, src }: {
             <div className="mt-auto">
                 <Image
                     src={src}
-                         className={clsx("object-contain", imageClass)}
+                    alt="プランキャラクター"
+                    className={clsx("object-contain", imageClass)}
                 />
             </div>
 
@@ -110,6 +111,7 @@ const PlanItem = ({ title, price, content, delay, imageClass, href, src }: {
             <div className="mt-auto">
                 <Image
                     src={src}
+                    alt="プランキャラクター"
                     className={clsx("object-contain", imageClass)}
                 />
             </div>

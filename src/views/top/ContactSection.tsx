@@ -1,4 +1,3 @@
-import { SectionType1 } from "@/components/SectionType1"
 import Image from 'next-export-optimize-images/picture';
 import { motion } from "motion/react";
 import Link from "next/link";
@@ -6,10 +5,7 @@ import Line from '@/assets/sns/LINE.svg'
 import button1 from '@/assets/button1.png'
 import button2 from '@/assets/button2.png'
 import ContactBackground from '@/assets/contact-background.png'
-import ContactBackground2 from '@/assets/contact-background2.png'
 import { resources } from "@/resources";
-import { MdEmail, MdPlayCircle } from "react-icons/md";
-import { filter } from "motion/react-client";
 
 export const ContactSection = () => {
 

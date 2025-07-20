@@ -22,7 +22,7 @@ export const ProfileSection = () => <SectionBox className={clsx(
                 initial={{ translateY: "100%", opacity: 0.4, scale: 1 }}
                 whileInView={{ translateY: "0", opacity: 1, scale: 1 }}
                 className="size-full">
-                <Image src={Profile} w={460} alt="img" className="" />
+                <Image src={Profile} w={460} alt="中四国クリエイティブ学園 学園長のプロフィール" className="" />
             </motion.div>
         </FadeAndSlideScrollTriggerAnimation>
     </div>
