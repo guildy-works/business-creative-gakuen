@@ -14,15 +14,4 @@ const nextConfig = {
 
 };
 
-// CI環境では画像最適化プラグインを無効化
-const isCI = process.env.CI === 'true' || process.env.GITHUB_ACTIONS === 'true';
-
-let config;
-if (isCI) {
-    nextConfig.images.unoptimized = true;
-    config = nextConfig;
-} else {
-    config = withExportImages(nextConfig);
-}
-
-export default config;
+export default withExportImages(nextConfig);
