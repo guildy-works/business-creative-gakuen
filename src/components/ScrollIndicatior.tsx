@@ -14,12 +14,12 @@ export const ScrollIndicator = () => {
         }}
         className={clsx(styles.container, "sm:mr-6 md:8 z-10")}
     >
-        <a className="bg-color3/90 backdrop-blur-md text-white p-2 sm:p-4 rounded-xl flex justify-center items-center"
+        {/* <a className="bg-color3/90 backdrop-blur-md text-white p-2 sm:p-4 rounded-xl flex justify-center items-center"
             href="#contacts"
         >
             お問い合わせ
             <MdMail className="text-[24px] sm:mt-2" />
-        </a>
+        </a> */}
 
     </div>;
 };

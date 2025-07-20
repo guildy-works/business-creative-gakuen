@@ -44,7 +44,7 @@ export default function RootLayout({
 
             <body className="flex flex-col relative w-svw overflow-x-hidden">
                 <Header />
-                <main className="w-full overflow-x-hidden">{children}</main>
+                <main className="w-full overflow-x-hidden max-w-[600px]">{children}</main>
                 <Footer />
             </body>
         </html>

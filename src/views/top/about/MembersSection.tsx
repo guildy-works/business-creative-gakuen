@@ -4,10 +4,9 @@ import { Campaign } from "../Campain";
 import { motion } from "motion/react";
 
 export const MembersSection = () => {
-    return <SectionBox disablePx disableMaxWidth>
+    return <SectionBox disablePx disableMaxWidth className="!my-0">
         <div className="w-full flex flex-col items-center mx-auto gap-4 justify-center">
             <MembersSection2 />
         </div>
-
     </SectionBox>
 }

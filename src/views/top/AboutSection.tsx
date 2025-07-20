@@ -1,23 +1,184 @@
+import { BlackTextBox } from "@/components/BlackTextBox";
 import { DiscordSection } from "./about/DiscordSection";
 import { IntroduceSection } from "./about/IntroduceSection";
 import { MembersSection } from "./about/MembersSection";
 import { OnayamiSection } from "./about/OnayamiSection";
 import { PlansSection } from "./about/PlansSection";
 import { ProfileSection } from "./about/ProfileSection";
+import background1 from "@/assets/background1.png";
+import decoration1 from "@/assets/decoration1.png";
+import Image from 'next-export-optimize-images/picture';
+import { NumberBorderBox } from "@/components/NumberBorderBox";
+
+import Text01 from "@/assets/01.png";
+import Text02 from "@/assets/02.png";
+import Text03 from "@/assets/03.png";
+import Text04 from "@/assets/04.png";
+import Text05 from "@/assets/05.png";
+
+import フリー商談会 from "@/assets/フリー商談会.png";
+
 
 export default function AboutSection() {
     return (
-        <section className="w-full relative flex flex-col gap-0">
+        <div
+            className="bg-image flex flex-col items-center justify-center gap-12 py-8 px-8 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+            <BlackTextBox className="text-center !p-8 !py-6" isOutline={false}>
+                <h2 className="text-[2.5rem] tracking-[0.2rem] font-nikokaku">出会いから<span className="text-color2">アイデア</span>を</h2>
+                <h3 className="text-[1.1rem] tracking-[0.08rem] mt-4 font-nikokaku">
+                    <span className="text-red-600">初心者以上</span>
+                    の人が集まり、スキルアップを実現
+                </h3>
+            </BlackTextBox>
 
-            <ProfileSection />
-            <OnayamiSection />
+            <BlackTextBox className="ml-auto flex py-6" isOutline>
+                <div className="mt-2">
+                    <svg width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 className="text-title3">
+                        <span>中国地方最級</span><br />
+                        <span >オンラインコミュニティ</span>
+                    </h2>
+                    <h3 className="text-size-p mt-4 font-dot">
+                        ビジネスに必要な<br />
+                        <span className="text-color2">クリエイティブやマーケティングを</span><br />
+                        学んでシェアしてスキルアップ
+                    </h3>
+                </div>
+            </BlackTextBox>
 
-            <IntroduceSection />
-            <DiscordSection />
-            <MembersSection />
+            <BlackTextBox className="mr-auto flex py-6" isOutline>
+                <div className="mt-2">
+                    <svg width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 className="text-title3">
+                        <span>経営者や</span><br />
+                        <span >フリーランスと共創</span>
+                    </h2>
+                    <h3 className="text-size-p mt-4 font-dot">
+                        中四国で活躍している<br />
+                        経営者やフリーランスと交流でき<br />
+                        <span className="text-color2">中四国の人脈が広がる</span><br />
+                    </h3>
+                </div>
+            </BlackTextBox>
 
-            <PlansSection />
-        </section>
+
+            <BlackTextBox className="ml-auto flex py-6" isOutline>
+                <div className="mt-2">
+                    <svg width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 className="text-title3">
+                        <span>想像を超えた</span><br />
+                        <span >クリエイティブの発見</span>
+                    </h2>
+                    <h3 className="text-size-p mt-4 font-dot">
+                        同業種や他業種、異なる世代と繋がり<br />
+                        <span className="text-color2">ひとりでは思いつかなかった</span><br />
+                        <span className="text-color2">アイデアに出会える</span>
+
+
+
+
+                    </h3>
+                </div>
+            </BlackTextBox>
+
+            <div className="flex flex-col items-center justify-center gap-4">
+                <Image src={decoration1} alt="Background" />
+
+                <NumberBorderBox className="" numberText={Text01}>
+                    <div className="flex">
+                        <div className="flex flex-col">
+                            <h3 className="border-b border-black mr-auto pb-2 text-title3 font-bold">メンバー交流</h3>
+                            <p className="text-size-p mt-3 font-bold leading-4">
+                                交流会やトークイベントなど、<br />
+                                色んなイベントを毎月開催してます！<br />
+                                中四国のフリーランスや経営者、<br />
+                                クリエイターと繋がろう
+                            </p>
+                        </div>
+                        <div className="flex flex-col">
+
+                        </div>
+                    </div>
+                </NumberBorderBox>
+
+                <NumberBorderBox className="" numberText={Text02}>
+                    <div className="flex p-2">
+                        <div className="flex flex-col px-1">
+                            <h3 className="border-b border-black mr-auto pb-2 text-title3 font-bold">宣伝や案件依頼</h3>
+                            <p className="text-size-p mt-3 font-bold leading-4">
+                                自分の事業やイベントの宣伝<br />
+                                仕事依頼や求人募集ができる！<br />
+                                名簿登録すると直接仕事や案件がメンバーから来るかも
+                            </p>
+                        </div>
+                        <div className="flex flex-col px-1 w-60">
+                            <Image src={フリー商談会} alt="Free Business Meeting" />
+                        </div>
+                    </div>
+                </NumberBorderBox>
+                <NumberBorderBox className="" numberText={Text03}>
+                    <div className="flex p-2">
+                        <div className="flex flex-col px-1">
+                            <h3 className="border-b border-black mr-auto pb-2 text-title3 font-bold">朝活とオフィス</h3>
+                            <p className="text-size-p mt-3 font-bold leading-4">
+                                毎日みんなで朝活をし<br />
+                                習慣化させ1日の生産性をUP！<br />
+                                24時間解放のバーチャルオフィスも
+                            </p>
+                        </div>
+                        <div className="flex flex-col px-1 w-60">
+                            <Image src={フリー商談会} alt="Free Business Meeting" />
+                        </div>
+                    </div>
+                </NumberBorderBox>
+
+                <NumberBorderBox className="" numberText={Text04}>
+                    <div className="flex p-2">
+                        <div className="flex flex-col px-1">
+                            <h3 className="border-b border-black mr-auto pb-2 text-title3 font-bold">部活と委員会</h3>
+                            <p className="text-size-p mt-3 font-bold leading-4">
+                                オンラインで交流！<br />
+                                部活は趣味で繋がろう！<br />
+                                委員会はトレンドや事例紹介など会議をしてスキルアップ！
+                            </p>
+                        </div>
+                        <div className="flex flex-col px-1 w-60">
+                            <Image src={フリー商談会} alt="Free Business Meeting" />
+                        </div>
+                    </div>
+                </NumberBorderBox>
+
+                <NumberBorderBox className="" numberText={Text05}>
+                    <div className="flex p-2">
+                        <div className="flex flex-col px-1">
+                            <h3 className="border-b border-black mr-auto pb-2 text-title3 font-bold">情報の相互提供</h3>
+                            <p className="text-size-p mt-3 font-bold leading-4">
+                                自分のアイデアを共有しながら、<br />
+                                メンバーのアイデアを参考にして、<br />
+                                自分の事業やクリエイティブに落とし込もう
+                            </p>
+                        </div>
+                        <div className="flex flex-col px-1 w-60">
+                            <Image src={フリー商談会} alt="Free Business Meeting" />
+                        </div>
+                    </div>
+                </NumberBorderBox>
+            </div>
+        </div>
+
+
     );
 }
 

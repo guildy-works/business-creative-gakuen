@@ -16,8 +16,8 @@ const data = [
         title: "公式LINEの追加",
         img: Join1,
         content: <>
-            つながるラボの<br />
-            公式LINEの追加
+            中四国ビジクリ学園の<br />
+            公式LINEを追加
         </>
     },
     {
@@ -31,30 +31,28 @@ const data = [
     },
     {
         num: "03",
-        title: <>つながるラボの<br />コミュニティへ招待</>,
+        title: <>コミュニティへ招待</>,
         img: Join3,
         content: <>
-            申し込みの確認ができましたら<br />
-            サロンで活用する<br />
+            申し込み確認ができたら<br />
             Discordサーバーへ招待
         </>,
     },
     {
         num: "04",
-        title: "正式",
+        title: "正式メンバーへ",
         img: Join4,
         content: <>
-            問題がなければ<br />
-            「つながるラボメンバー」<br />
-            になれます
+            おめでとうございます<br />
+            今日からメンバーです
         </>,
     },
 ]
 
 export const HowToJoinSection = () => {
-    return <SectionBox disablePx disableMaxWidth className="mx-auto max-w-4xl !gap-8">
-        <h2 className="text-title1 w-full border-b-2 border-color3 pb-4 text-center border-dotted max-w-md">
-            方法
+    return <SectionBox disablePx disableMaxWidth className="mx-auto max-w-4xl !gap-8 bg-black !my-0">
+        <h2 className="text-title1 font-nikokaku w-full pb-4 text-center max-w-md">
+            メンバーになるには
         </h2>
 
         <div className="w-full flex flex-col  px-8" >
@@ -88,14 +86,15 @@ const IntroduceItem = ({ title, content, delay, num, src, isLast }: {
         <FadeAndSlideScrollTriggerAnimation
             delay={0.2}
             className={clsx(
-                "w-full h-full flex flex-col gap-4 relative  pb-8",
-                isLast ? "" : "border-l-2 border-color3"
+                "h-full flex flex-col gap-4 relative  pb-8 text-white font-dot",
+                isLast ? "" : "border-x-2 border-white border-dotted"
             )}
         >
-            <div className="bg-color3 rounded-full size-8 flex justify-center items-center absolute left-0 top-0 -translate-x-1/2"></div>
+            <div className=" bg-white size-4 flex justify-center items-center absolute left-0  -translate-x-1/2"></div>
+            <div className="bg-white size-4 flex justify-center items-center absolute right-0  translate-x-1/2"></div>
 
-            <div className="flex flex-wrap w-full">
-                <div className="ml-8">
+            <div className="flex flex-wrap w-fit pr-4">
+                <div className="ml-8 -mt-2">
                     <h3 className="h-8 flex items-center text-title3 text-color3">
                         <small className="mr-4">STEP</small> {num}
                     </h3>
@@ -106,11 +105,9 @@ const IntroduceItem = ({ title, content, delay, num, src, isLast }: {
                         {content}
                     </p>
                 </div>
-                <div className="ml-auto my-auto">
-                    <Image src={src} alt={title} className="size-32 object-cover" />
-                </div>
 
             </div>
+
         </FadeAndSlideScrollTriggerAnimation>
     );
 }

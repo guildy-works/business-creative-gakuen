@@ -12,6 +12,16 @@
     src: url("/Slight.woff");
 }
 
+@font-face {
+    font-family: "BestTen-DOT";
+    src: url("/BestTen-DOT.otf");
+}
+
+@font-face {
+    font-family: "nicokaku";
+    src: url("/nicokaku_v2-5.ttf");
+}
+
 body,
 html {
     color: rgb(var(--foreground-rgb));
@@ -66,6 +76,56 @@ div {
 
 .bg-gradient6 {
     background: linear-gradient(30deg, #ffdd58 0%, #fe924e 100%);
+}
+
+.bg-image {
+    background-image: url("/background1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+.bg-image2 {
+    background-color: #29adff;
+    background-image: url("/background2.png");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.bg-image3 {
+    background-image: url("/background3.png");
+    background-size: contain;
+    background-position: top;
+    background-repeat: repeat;
+}
+
+.bg-image4 {
+    background-image: url("/background4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+}
+
+.bg-image5 {
+    background-image: url("/contact-background2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat-x ;
+}
+
+.bg-button1 {
+    background-image: url("/button1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+.bg-button2 {
+    background-image: url("/button2.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat:no-repeat;
 }
 
 .link {

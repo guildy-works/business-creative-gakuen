@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button, Description, Dialog, DialogBackdrop, DialogPanel, DialogTitle, Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { MdClose, MdMenu } from 'react-icons/md';
 import { SnsLinkList } from '@/components/SnsLinkList';
-import Logo from "@/assets/logo_circle.png";
+import Logo from "@/assets/logo.png";
 import Image from 'next-export-optimize-images/picture';
 import { DOMMotionComponents, motion } from "motion/react"
 import { resources } from '@/resources';
@@ -31,8 +31,8 @@ export const Header = () => {
         <>
             <header className="flex w-full items-center sticky top-0 mt-0 z-50 border-b bg-black">
                 <Link href="/" className='p-2 flex items-center'>
-                    <Image src={Logo} alt="Logo" width={80} className='w-[50px] md:w-[80px]' />
-                   <span className='text-[1.8rem] sm:text-[2.1rem] text-white ml-2 tracking-tighter font-dot'>{resources.siteTitle}</span> 
+                    <Image src={Logo} alt="Logo" width={200} className='w-[24px] md:w-[32px]' />
+                   <span className='text-[1.1rem] tracking-wide sm:text-[2.1rem] text-white ml-2 font-dot'>{resources.siteTitle}</span> 
                 </Link>
 
                 {/* Desktop */}
@@ -114,12 +114,12 @@ export const Header = () => {
                 <Link
                     href={resources.links.line}
                     target='_blank'
-                    className="md:hidden ml-auto min-w-32 mr-0 gap-2 rounded-lg flex items-center justify-center bg-color2 py-2 px-4 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-color2/80">
+                    className="md:hidden ml-auto min-w-32 mr-3 gap-2 rounded-lg flex items-center justify-center bg-color2 py-2 px-4 font-semibol shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-color2/80">
                     入会はコチラ
                 </Link>
 
                 {/* Mobile */}
-                <nav className="flex md:hidden gap-6">
+                {/* <nav className="flex md:hidden gap-6">
                     <button
                         aria-label="Menu"
                         onClick={() => setIsMenuOpen(true)}
@@ -128,7 +128,7 @@ export const Header = () => {
                     </button>
 
                     <Drawer isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
-                </nav>
+                </nav> */}
             </header>
         </>
     );

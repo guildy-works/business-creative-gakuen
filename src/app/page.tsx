@@ -6,6 +6,8 @@ import AboutSection from "@/views/top/AboutSection";
 import { ContactSection } from "@/views/top/ContactSection";
 import { FaqSection } from "@/views/top/FaqSection";
 import { HowToJoinSection } from "@/views/top/HowToJoinSection";
+import { MembersSection } from "@/views/top/about/MembersSection";
+import { PlansSection } from "@/views/top/about/PlansSection";
 
 export default function Home() {
     return (
@@ -14,6 +16,8 @@ export default function Home() {
 
             <AboutSection />
 
+            <MembersSection />
+            <PlansSection />
             <HowToJoinSection />
             <FaqSection />
 

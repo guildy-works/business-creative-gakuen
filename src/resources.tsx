@@ -17,7 +17,7 @@ import Balloon1 from "@/assets/balloon1.svg";
 import CommingSoon from "@/assets/comming-soon.svg";
 
 export const resources = {
-    siteTitle: "ビジクリ学園",
+    siteTitle: "中四国クリエイティヴ学園",
     top: {
         topTitle: "#アイデア、爆上げ",
     },
