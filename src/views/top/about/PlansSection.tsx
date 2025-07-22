@@ -18,7 +18,7 @@ export const PlansSection = () => {
             <div id="plans" className="absolute -top-24" />
             <div className="w-full flex flex-col items-center mx-auto gap-8 justify-center">
 
-                <h2 className="text-title1 font-bold text-white font-nikokaku">料金プラン</h2>
+                <h2 className="text-title1 text-white font-nikokaku">料金プラン</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
                     <PlanItem title={<>フリープラン</>}
