@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import { Options, Splide, SplideSlide } from "@splidejs/react-splide";
+import { Options, Splide, SplideSlide, } from "@splidejs/react-splide";
 import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation";
 import { resources } from "@/resources";
 import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/FadeAndSlideScrollTriggerAnimation";
@@ -17,7 +17,7 @@ export const MembersSection2 = () => {
             </FadeAndSlideScrollTriggerAnimation>
 
             <Splide
-                className="mx-auto max-w-full"
+                className="mx-auto max-w-full pb-16"
                 options={{
                     autoplay: false,
                     rewind: false,
@@ -31,6 +31,10 @@ export const MembersSection2 = () => {
                     padding: { right: '2rem', left: '2rem', },
                     perPage: 1,
                     autoWidth: true,
+                    classes: {
+                        pagination: "splide__pagination",
+                        page: "splide__pagination__page dot-pagination",
+                    },
                 } as Options}
             >
                 {resources.members2.map((resource, index) => (<SplideSlide key={resource.name} >
@@ -45,11 +49,11 @@ export const MembersSection2 = () => {
 
             </Splide>
 
-            <p className="font-dot text-center text-size1 leading-5">
+            <SkewScrollTriggerAnimation skewPanelClass="!bg-[#29adff]" className="font-dot text-center text-size1 leading-5">
                 フリーランス、経営者、<br />
                 インフルエンサー、アフィリエイターなど<br />
                 色んなクリエイターがいます
-            </p>
+            </SkewScrollTriggerAnimation>
         </div>
     )
 }

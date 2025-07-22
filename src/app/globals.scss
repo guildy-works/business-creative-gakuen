@@ -146,7 +146,7 @@ div {
     }
 
     50% {
-        translate:0px -3px;
+        translate: 0px -3px;
     }
 
     to {
@@ -161,4 +161,26 @@ div {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-fill-mode: forwards;
+}
+
+
+/* ページネーションのスタイル */
+.dot-pagination {
+    background-color: transparent !important;
+    height: 16px!important;
+    width: 16px!important;
+    background-image: url("/dot2.png") !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    outline: none !important    ;
+}
+
+/* 現在表示されているページネーションのスタイル */
+.dot-pagination.is-active {
+    background-color: transparent !important;
+    background-image: url("/dot1.png") !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
