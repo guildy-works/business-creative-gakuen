@@ -4,22 +4,22 @@
 
 @font-face {
     font-family: "rounded-mplus-1c";
-    src: url("/tsunagaru-lab-new/rounded-mplus-1c-bold.woff");
+    src: url("/rounded-mplus-1c-bold.woff");
 }
 
 @font-face {
     font-family: "Slight";
-    src: url("/tsunagaru-lab-new/Slight.woff");
+    src: url("/Slight.woff");
 }
 
 @font-face {
     font-family: "BestTen-DOT";
-    src: url("/tsunagaru-lab-new/BestTen-DOT.otf");
+    src: url("/BestTen-DOT.otf");
 }
 
 @font-face {
     font-family: "nicokaku";
-    src: url("/tsunagaru-lab-new/nicokaku_v2-5.ttf");
+    src: url("/nicokaku_v2-5.ttf");
 }
 
 body,
@@ -47,7 +47,7 @@ div {
 }
 
 .bg-image {
-    background-image: url("/tsunagaru-lab-new/background1.png");
+    background-image: url("/background1.png");
     background-size: contain;
     background-position: center;
     background-repeat: repeat-y;
@@ -55,28 +55,28 @@ div {
 
 .bg-image2 {
     background-color: #29adff;
-    background-image: url("/tsunagaru-lab-new/background2.png");
+    background-image: url("/background2.png");
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
 }
 
 .bg-image3 {
-    background-image: url("/tsunagaru-lab-new/background3.png");
+    background-image: url("/background3.png");
     background-size: contain;
     background-position: top;
     background-repeat: repeat;
 }
 
 .bg-image4 {
-    background-image: url("/tsunagaru-lab-new/background4.png");
+    background-image: url("/background4.png");
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat ;
 }
 
 .bg-image5 {
-    background-image: url("/tsunagaru-lab-new/contact-background2.png");
+    background-image: url("/contact-background2.png");
     background-size: cover;
     background-position: center;
     background-repeat:repeat-x ;
@@ -84,21 +84,21 @@ div {
 
 
 .bg-image6 {
-    background-image: url("/tsunagaru-lab-new/background5.png");
+    background-image: url("/background5.png");
     background-size: cover;
     background-position: center;
     background-repeat:repeat-x ;
 }
 
 .bg-button1 {
-    background-image: url("/tsunagaru-lab-new/button1.png");
+    background-image: url("/button1.png");
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat;
 }
 
 .bg-button2 {
-    background-image: url("/tsunagaru-lab-new/button2.png");
+    background-image: url("/button2.png");
     background-size: auto;
     background-position: center;
     background-repeat:no-repeat;
