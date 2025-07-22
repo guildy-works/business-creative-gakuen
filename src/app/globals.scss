@@ -4,22 +4,22 @@
 
 @font-face {
     font-family: "rounded-mplus-1c";
-    src: url("/tsunagaru-lab-new/rounded-mplus-1c-bold.woff");
+    src: url("/rounded-mplus-1c-bold.woff");
 }
 
 @font-face {
     font-family: "Slight";
-    src: url("/tsunagaru-lab-new/Slight.woff");
+    src: url("/Slight.woff");
 }
 
 @font-face {
     font-family: "BestTen-DOT";
-    src: url("/tsunagaru-lab-new/BestTen-DOT.otf");
+    src: url("/BestTen-DOT.otf");
 }
 
 @font-face {
     font-family: "nicokaku";
-    src: url("/tsunagaru-lab-new/nicokaku_v2-5.ttf");
+    src: url("/nicokaku_v2-5.ttf");
 }
 
 body,
@@ -47,7 +47,7 @@ div {
 }
 
 .bg-image {
-    background-image: url("/tsunagaru-lab-new/background1.png");
+    background-image: url("/background1.png");
     background-size: contain;
     background-position: center;
     background-repeat: repeat-y;
@@ -55,93 +55,110 @@ div {
 
 .bg-image2 {
     background-color: #29adff;
-    background-image: url("/tsunagaru-lab-new/background2.png");
+    background-image: url("/background2.png");
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
 }
 
 .bg-image3 {
-    background-image: url("/tsunagaru-lab-new/background3.png");
+    background-image: url("/background3.png");
     background-size: contain;
     background-position: top;
     background-repeat: repeat;
 }
 
 .bg-image4 {
-    background-image: url("/tsunagaru-lab-new/background4.png");
+    background-image: url("/background4.png");
     background-size: cover;
     background-position: center;
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
 }
 
 .bg-image5 {
-    background-image: url("/tsunagaru-lab-new/contact-background2.png");
+    background-image: url("/contact-background2.png");
     background-size: cover;
     background-position: center;
-    background-repeat:repeat-x ;
+    background-repeat: repeat-x;
 }
-
 
 .bg-image6 {
-    background-image: url("/tsunagaru-lab-new/background5.png");
+    background-image: url("/background5.png");
     background-size: cover;
     background-position: center;
-    background-repeat:repeat-x ;
+    background-repeat: repeat-x;
 }
 
-.bg-button1 {
-    background-image: url("/tsunagaru-lab-new/button1.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat:no-repeat;
-}
 
-.bg-button2 {
-    background-image: url("/tsunagaru-lab-new/button2.png");
-    background-size: auto;
-    background-position: center;
-    background-repeat:no-repeat;
-}
+@keyframes pulse {
+    0% {
+        transform: scaleX(1)
+    }
 
-.link {
-    font-size: 0.8rem;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-}
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
 
-.active {
-    @apply pl-3;
-    &::before {
-        content: "";
-        position: absolute;
-        bottom: 2px;
-        left: 0;
-        width: 16px;
-        height: 1px;
-        background-color: black;
-        transform: rotate(-65deg);
-        transform-origin: left bottom;
+    to {
+        transform: scaleX(1)
     }
 }
 
-.typing-effect {
-  width: 290px;
-  animation: typing 3s steps(29), effect .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
+.animate-pulse-scale {
+    animation-name: pulse;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
- 
-@keyframes typing {
-  from {
-    width: 0
-  }
+
+
+
+@keyframes pulse-x {
+    0% {
+        transform: translateX(0px)
+    }
+
+    50% {
+        transform: translateX(-3px)
+    }
+
+    to {
+        transform: translateX(0px)
+    }
 }
-    
-@keyframes effect {
-  50% {
-    border-color: transparent
-  }
+
+.animate-pulse-x {
+    animation-name: pulse-x;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes pulse-y {
+    0% {
+        translate: 0px 0px;
+    }
+
+    50% {
+        translate:0px -3px;
+    }
+
+    to {
+        translate: 0px 0px;
+    }
+}
+
+.animate-pulse-y {
+    animation-name: pulse-y;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }

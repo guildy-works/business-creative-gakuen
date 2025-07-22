@@ -22,7 +22,7 @@ export const SkewScrollTriggerAnimation = (props: SkewAnimationProp) => {
         if (width) {
             // width / 100px
             const w = width / 100;
-            const t = Math.floor(300 * w * (props.speed ?? 0.5));
+            const t = Math.floor(300 * w * (props.speed ?? 0.8));
             if (t !== time) {
                 setTime(t * 0.001);
             }

@@ -1,3 +1,4 @@
+import { resources } from "@/resources";
 
 export default function TermsOfService() {
     return (<div className="p-8 max-w-5xl mx-auto">
@@ -6,7 +7,7 @@ export default function TermsOfService() {
         {/* 利用規約 */}
         <section className="mb-6">
             <p>
-                中四国クリエイティブ学園運営者（以下「サロン運営者」といいます。）は、中四国クリエイティブ学園会員規約（以下「本規約」といいます。）を定め、本規約に従い、「中四国クリエイティブ学園」（以下「本サロン」といいます。）を提供します。
+                {resources.siteTitle}学園運営者（以下「サロン運営者」といいます。）は、{resources.siteTitle}学園会員規約（以下「本規約」といいます。）を定め、本規約に従い、「{resources.siteTitle}学園」（以下「本サロン」といいます。）を提供します。
                 登録メンバーの皆さま（以下、「メンバー」といいます。）には、本規約に従って、本サロンをご利用いただきます。
             </p>
         </section>

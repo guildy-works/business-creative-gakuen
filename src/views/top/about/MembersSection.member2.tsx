@@ -12,7 +12,7 @@ export const MembersSection2 = () => {
         <div className="w-full flex flex-col items-center mx-auto gap-8 justify-center bg-image2 py-16">
 
             <FadeAndSlideScrollTriggerAnimation
-                className="text-title2 px-8 font-bold font-dot bg-black text-white p-4 rounded-xl border-4 border-white">
+                className="px-8 font-bold font-dot bg-black text-white p-4 rounded-xl border-4 border-white text-title3">
                 メンバー紹介
             </FadeAndSlideScrollTriggerAnimation>
 
@@ -45,7 +45,7 @@ export const MembersSection2 = () => {
 
             </Splide>
 
-            <p className="font-dot text-center text-title4 leading-5">
+            <p className="font-dot text-center text-size1 leading-5">
                 フリーランス、経営者、<br />
                 インフルエンサー、アフィリエイターなど<br />
                 色んなクリエイターがいます

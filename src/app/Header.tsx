@@ -30,7 +30,7 @@ export const Header = () => {
 
     return (
         <>
-            <header className="flex w-full items-center sticky top-0 mt-0 z-50 border-b bg-black">
+            <header className="flex w-full items-center sticky top-0 mt-0 z-50 bg-black h-[46px]">
                 <Link href="/" className='p-2 flex items-center'>
                     <Image src={Logo} alt="Logo" width={200} className='w-[24px] md:w-[32px]' />
                     <span className='text-[1.1rem] tracking-wide sm:text-[2.1rem] text-white ml-2 font-dot'>{resources.siteTitle}</span>
@@ -107,7 +107,7 @@ export const Header = () => {
                     <Link
                         href={resources.links.line}
                         target='_blank'
-                        className=" min-w-32 gap-2 rounded-lg flex items-center justify-center bg-color2 py-2 px-4 font-semibold focus:outline-none data-[hover]:bg-color2/80">
+                        className="animate-pulse-scale min-w-32 gap-2 rounded-lg flex font-dot items-center justify-center bg-color2 py-2 px-4 font-semibold focus:outline-none data-[hover]:bg-color2/80">
                         入会はコチラ
                     </Link>
                 </nav>
@@ -115,7 +115,7 @@ export const Header = () => {
                 <Link
                     href={resources.links.line}
                     target='_blank'
-                    className="md:hidden font-dot ml-auto min-w-32 mr-3 gap-2 rounded-lg flex items-center justify-center bg-color2 py-1 px-4 font-semibol shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-color2/80">
+                    className="animate-pulse-scale md:hidden font-dot ml-auto min-w-32 mr-3 gap-2 rounded-lg flex items-center justify-center bg-color2 py-1 px-4 font-semibol shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-color2/80">
                     入会はコチラ
 
                     <Image src={Line} alt="Line" className="w-6" />

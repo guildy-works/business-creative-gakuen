@@ -4,6 +4,7 @@ import { ReactNode } from "react"
 import { StaticImageData } from "next/image";
 import Image from 'next-export-optimize-images/picture';
 import clsx from "clsx";
+import { resources } from "@/resources";
 
 const data = [
 
@@ -11,7 +12,7 @@ const data = [
         num: "01",
         title: "公式LINEの追加",
         content: <>
-            中四国ビジクリ学園の<br />
+            {resources.siteTitle}の<br />
             公式LINEを追加
         </>
     },
@@ -43,7 +44,7 @@ const data = [
 
 export const HowToJoinSection = () => {
     return <SectionBox disablePx disableMaxWidth className="mx-auto max-w-4xl !gap-8 bg-black !my-0">
-        <h2 className="text-title1 font-nikokaku w-full pb-4 text-center max-w-md">
+        <h2 className="text-title2 font-nikokaku w-full pb-4 text-center max-w-md text-white">
             メンバーになるには
         </h2>
 

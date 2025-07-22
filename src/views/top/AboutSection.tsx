@@ -15,16 +15,22 @@ import About03 from "@/assets/about03.png";
 import About04 from "@/assets/about04.png";
 import About05 from "@/assets/フリー商談会.png";
 import About06 from "@/assets/about06.png";
+
+import Chat1 from "@/assets/chat1.png";
+import Chat2 from "@/assets/chat2.png";
+import Chat3 from "@/assets/chat3.png";
+
 import Link from "next/link";
 import { resources } from "@/resources";
+import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/FadeAndSlideScrollTriggerAnimation";
 
 export default function AboutSection() {
     return (
         <div
             className="bg-image flex flex-col items-center justify-center gap-12 py-8 px-8 sm:px-8 md:px-12 lg:px-16 xl:px-20">
             <BlackTextBox className="text-center !p-8 !py-6" isOutline={false}>
-                <h2 className="text-[2.5rem] tracking-[0.2rem] font-nikokaku">出会いから<span className="text-color2">アイデア</span>を</h2>
-                <h3 className="text-[1.1rem] tracking-[0.08rem] mt-4 font-nikokaku">
+                <h2 className="text-title2 font-nikokaku tracking-tighter">出会いから<span className="text-color2">アイデア</span>を</h2>
+                <h3 className="text-[1.1rem] tracking-[0.08rem] mt-2 font-nikokaku">
                     <span className="text-red-600">初心者以上</span>
                     の人が集まり、スキルアップを実現
                 </h3>
@@ -32,73 +38,74 @@ export default function AboutSection() {
 
             <BlackTextBox className="ml-auto flex py-6" isOutline>
                 <div className="mt-2">
-                    <svg width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="animate-pulse-x"  width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
                     </svg>
                 </div>
                 <div>
-                    <h2 className="text-title3">
-                        <span>中国地方最級</span><br />
+                    <h2 className="text-title4 font-bold">
+                        <span>中四国最大級</span><br />
                         <span >オンラインコミュニティ</span>
                     </h2>
-                    <h3 className="text-size-p mt-4 font-dot">
+                    <h3 className="text-size-p mt-4 font-dot pr-24">
                         ビジネスに必要な<br />
                         <span className="text-color2">クリエイティブやマーケティングを</span><br />
                         学んでシェアしてスキルアップ
                     </h3>
+                    <Image src={Chat1} alt="Background" className="absolute bottom-0 right-0 w-24" />
                 </div>
             </BlackTextBox>
 
-            <BlackTextBox className="mr-auto flex py-6" isOutline>
+            <BlackTextBox className="mr-auto flex py-6 relative" isOutline>
                 <div className="mt-2">
-                    <svg width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="animate-pulse-x"  width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
                     </svg>
                 </div>
                 <div>
-                    <h2 className="text-title3">
+                    <h2 className="text-title4 font-bold">
                         <span>経営者や</span><br />
                         <span >フリーランスと共創</span>
                     </h2>
-                    <h3 className="text-size-p mt-4 font-dot">
+                    <h3 className="text-size-p mt-4 font-dot  pr-20">
                         中四国で活躍している<br />
                         経営者やフリーランスと交流でき<br />
                         <span className="text-color2">中四国の人脈が広がる</span><br />
                     </h3>
+                    <Image src={Chat2} alt="Background" className="absolute bottom-0 right-0 w-24" />
                 </div>
             </BlackTextBox>
 
 
-            <BlackTextBox className="ml-auto flex py-6" isOutline>
+            <BlackTextBox className="ml-auto flex py-6 relative" isOutline>
                 <div className="mt-2">
-                    <svg width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="animate-pulse-x" width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
                     </svg>
                 </div>
                 <div>
-                    <h2 className="text-title3">
+                    <h2 className="text-title4 font-bold">
                         <span>想像を超えた</span><br />
                         <span >クリエイティブの発見</span>
                     </h2>
-                    <h3 className="text-size-p mt-4 font-dot">
+                    <h3 className="text-size-p mt-4 font-dot pr-20">
                         同業種や他業種、異なる世代と繋がり<br />
                         <span className="text-color2">ひとりでは思いつかなかった</span><br />
                         <span className="text-color2">アイデアに出会える</span>
-
-
-
-
                     </h3>
+                    <Image src={Chat3} alt="Background" className="absolute bottom-0 right-0 w-24" />
                 </div>
             </BlackTextBox>
 
             <div className="flex flex-col items-center justify-center gap-4">
-                <Image src={decoration1} alt="Background" />
+                <FadeAndSlideScrollTriggerAnimation>
+                <Image src={decoration1} alt="Background" className="animate-pulse-y" />
+                </FadeAndSlideScrollTriggerAnimation>
 
                 <NumberBorderBox className="" numberText={Text01}>
-                    <div className="flex">
-                        <div className="flex flex-col">
-                            <h3 className="border-b border-black mr-auto pb-2 text-title3 font-bold">メンバー交流</h3>
+                    <div className="flex p-2">
+                        <div className="flex flex-col px-1">
+                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">メンバー交流</h3>
                             <p className="text-size-p mt-3 font-bold leading-4">
                                 交流会やトークイベントなど、<br />
                                 色んなイベントを毎月開催してます！<br />
@@ -115,7 +122,7 @@ export default function AboutSection() {
                 <NumberBorderBox className="" numberText={Text02}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
-                            <h3 className="border-b border-black mr-auto pb-2 text-title3 font-bold">宣伝や案件依頼</h3>
+                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">宣伝や案件依頼</h3>
                             <p className="text-size-p mt-3 font-bold leading-4">
                                 自分の事業やイベントの宣伝<br />
                                 仕事依頼や求人募集ができる！<br />
@@ -130,7 +137,7 @@ export default function AboutSection() {
                 <NumberBorderBox className="" numberText={Text03}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
-                            <h3 className="border-b border-black mr-auto pb-2 text-title3 font-bold">朝活とオフィス</h3>
+                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">朝活とオフィス</h3>
                             <p className="text-size-p mt-3 font-bold leading-4">
                                 毎日みんなで朝活をし<br />
                                 習慣化させ1日の生産性をUP！<br />
@@ -146,7 +153,7 @@ export default function AboutSection() {
                 <NumberBorderBox className="" numberText={Text04}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
-                            <h3 className="border-b border-black mr-auto pb-2 text-title3 font-bold">部活と委員会</h3>
+                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">部活と委員会</h3>
                             <p className="text-size-p mt-3 font-bold leading-4">
                                 オンラインで交流！<br />
                                 部活は趣味で繋がろう！<br />
@@ -162,7 +169,7 @@ export default function AboutSection() {
                 <NumberBorderBox className="" numberText={Text05}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
-                            <h3 className="border-b border-black mr-auto pb-2 text-title3 font-bold">情報の相互提供</h3>
+                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">情報の相互提供</h3>
                             <p className="text-size-p mt-3 font-bold leading-4">
                                 自分のアイデアを共有しながら、<br />
                                 メンバーのアイデアを参考にして、<br />
@@ -175,12 +182,12 @@ export default function AboutSection() {
                     </div>
                 </NumberBorderBox>
 
-                <NumberBorderBox className="w-full">
-                    <div className="flex flex-col p-2 items-center justify-center">
+                <NumberBorderBox className="w-full !p-0" innerClassName="!pt-0">
+                    <div className="flex flex-col p-4 items-center justify-center">
                         <div className="flex flex-col px-1 items-center justify-center text-center">
-                            <h3 className="pb-2 text-title3 font-bold">実際の様子</h3>
+                            <h3 className="text-title3 font-bold">実際の様子</h3>
                             <p className="text-size-p mt-2 font-bold leading-4">
-                               <Link href={resources.links.discordOfficial} target="_blank" className="text-color10 underline" rel="noopener noreferrer">Discord</Link>
+                                <Link href={resources.links.discordOfficial} target="_blank" className="text-color10 underline" rel="noopener noreferrer">Discord</Link>
                                 という無料アプリを使用します
                             </p>
                         </div>

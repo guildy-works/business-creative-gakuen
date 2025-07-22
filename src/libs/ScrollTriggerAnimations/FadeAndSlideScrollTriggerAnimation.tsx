@@ -21,9 +21,9 @@ export const FadeAndSlideScrollTriggerAnimation = ({
             viewport={{ once: true }}
             style={style}
             className={className}
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, delay: (delay ?? 0.2) }}
+            initial={{ opacity: 0, scale: 0.9, transform: "translateY(18px)" }}
+            whileInView={{ opacity: 1, scale: 1, transform: "translateY(0px)" }}
+            transition={{ duration: 0.1, delay: (delay ?? 0.2) }}
         >
             {children}
         </motion.div>

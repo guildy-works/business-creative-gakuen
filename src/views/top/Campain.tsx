@@ -1,65 +1,46 @@
+import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/FadeAndSlideScrollTriggerAnimation";
 import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation";
 import { resources } from "@/resources";
-import styles from "@/components/Strong.module.scss"
 import clsx from "clsx";
 import { motion } from "motion/react";
-import css from "@/components/Balloon.module.scss"
-import Image from 'next-export-optimize-images/picture';
 import Link from "next/link";
 
 export const Campaign = () => <>
     <div className="flex gap-4">
-        <motion.div
-            viewport={{ once: true }}
-            transition={{
-
-                translateY: { type: "spring", bounce: 1, damping: 5, mass: 0.3, },
-                scale: { type: "spring", bounce: 1, damping: 2, mass: 0.3, },
-                opacity: { duration: 0.3, },
-            }}
-            initial={{ translateY: "60px", opacity: 0, scale: 0.9 }}
-            whileInView={{ translateY: "0px", opacity: 1, scale: 1 }}
-            className="rounded-lg bg-black p-4 border-2 border-white z-10">
-            <div className="w-full h-full flex flex-col items-start justify-center font-dot gap-3">
+        <FadeAndSlideScrollTriggerAnimation
+            className="rounded-lg bg-black px-8 py-3 border-2 border-white z-10 w-[160px] sm:w-[220px]"
+        >
+            <div className="w-full h-full flex flex-col items-start justify-center font-dot gap-2">
                 <div className="flex items-center gap-2">
-                    <svg width="10" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="animate-pulse-x" width="10" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
                     </svg>
-                    <SkewScrollTriggerAnimation tag="h3" skewPanelClass="!bg-black" className="text-size2 text-white relative">
+                    <SkewScrollTriggerAnimation tag="h3" skewPanelClass="!bg-black" className="text-size1 text-white relative">
                         <Link href={resources.links.line} target="_blank" rel="noopener noreferrer">メンバーになる</Link>
                     </SkewScrollTriggerAnimation>
                 </div>
                 <div className="flex items-center gap-2">
-                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="10" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                     </svg>
-                    <SkewScrollTriggerAnimation tag="h3" skewPanelClass="!bg-black" className="text-size2 text-white mt-1">
+                    <SkewScrollTriggerAnimation tag="h3" skewPanelClass="!bg-black" className="text-size1 text-white mt-1">
                         <Link href={resources.links.line} target="_blank" rel="noopener noreferrer">逃げる</Link>
                     </SkewScrollTriggerAnimation>
                 </div>
             </div>
-        </motion.div>
+        </FadeAndSlideScrollTriggerAnimation>
 
-        <motion.div
-            viewport={{ once: true }}
-            transition={{
-
-                translateY: { type: "spring", bounce: 1, damping: 5, mass: 0.3, },
-                scale: { type: "spring", bounce: 1, damping: 2, mass: 0.3, },
-                opacity: { duration: 0.3, },
-            }}
-            initial={{ translateY: "60px", opacity: 0, scale: 0.9 }}
-            whileInView={{ translateY: "0px", opacity: 1, scale: 1 }}
-            className="rounded-lg bg-black p-4 border-2 border-white z-10">
+        <FadeAndSlideScrollTriggerAnimation
+            className="rounded-lg bg-black px-6 py-2 border-2 border-white z-10 w-[160px] sm:w-[220px]">
             <div className="w-full flex flex-col items-center justify-center gap-0">
-                <SkewScrollTriggerAnimation tag="h2" skewPanelClass="!bg-black" className={clsx("font-dot text-size2 text-white", styles.tooltip)}>LINE登録者限定</SkewScrollTriggerAnimation>
-                <SkewScrollTriggerAnimation tag="h3" skewPanelClass="!bg-black" className="font-dot text-title4 text-color2 relative">
+                <SkewScrollTriggerAnimation tag="h2" skewPanelClass="!bg-black" className="font-dot text-size1 text-white">LINE登録者限定</SkewScrollTriggerAnimation>
+                <SkewScrollTriggerAnimation tag="h3" skewPanelClass="!bg-black" className="font-dot text-title5 text-color2 relative">
                     無料キャンペーン
                 </SkewScrollTriggerAnimation>
                 <SkewScrollTriggerAnimation tag="h3" skewPanelClass="!bg-black" className="font-dot text-size1 text-color2">
                     実施中
                 </SkewScrollTriggerAnimation>
             </div>
-        </motion.div>
+        </FadeAndSlideScrollTriggerAnimation>
     </div>
 </>

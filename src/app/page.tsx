@@ -1,6 +1,5 @@
 'use client'
 
-import { ScrollIndicator } from "@/components/ScrollIndicator";
 import { TopSection } from "@/views/top/TopSection";
 import AboutSection from "@/views/top/AboutSection";
 import { ContactSection } from "@/views/top/ContactSection";
@@ -22,9 +21,6 @@ export default function Home() {
             <FaqSection />
 
             <ContactSection />
-
-            <ScrollIndicator />
-
         </>
     );
 }

@@ -1,6 +1,4 @@
 import Line from '@/assets/sns/LINE.svg'
-import Discord from '@/assets/sns/discord-square.svg'
-import X from '@/assets/sns/X.svg'
 import Image from 'next-export-optimize-images/picture';
 import { DOMMotionComponents, motion, useInView } from "motion/react"
 import { resources } from '@/resources';

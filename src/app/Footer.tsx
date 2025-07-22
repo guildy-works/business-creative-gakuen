@@ -5,6 +5,7 @@ import Logo from "@/assets/logo.png";
 import Image from 'next-export-optimize-images/picture';
 import { DOMMotionComponents, motion } from "motion/react"
 import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation";
+import { resources } from "@/resources";
 
 export const footerItems = [
     { href: "/legal-notice", label: "特定商取引法に基づく表記" },
@@ -36,7 +37,7 @@ export const Footer = () => {
                 {/* コピーライト */}
                 <div className="w-full pt-2">
                     <p className="text-center">
-                        © {new Date().getFullYear()} 中四国クリエイティブ学園. All rights reserved.
+                        © {new Date().getFullYear()} {resources.siteTitle}. All rights reserved.
                     </p>
                 </div>
             </div>

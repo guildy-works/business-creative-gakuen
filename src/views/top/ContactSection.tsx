@@ -21,29 +21,29 @@ export const ContactSection = () => {
                         viewport={{ once: true }}
                         initial={{ scale: 1.1, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
-                        className="z-0 bg-image5 p-8 flex flex-col border-4 border-black w-full">
-                        <h2 className="text-[3rem] text-center font-nikokaku">入会はコチラ</h2>
+                        className="z-0 bg-image5 py-8 px-4 flex flex-col border-4 border-black w-full">
+                        <h2 className="text-[3rem] text-center font-nikokaku font-bold">入会はコチラ</h2>
 
                         <motion.div
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
                             initial={{ opacity: 0, }}
                             whileInView={{ opacity: 1 }}
-                            className='mt-8 w-full text-center text-color10 text-title2 font-nikokaku'>
-                            ＼無料キャンペーン実施中∕
+                            className='mt-4 w-full text-center text-color10 text-title3 font-bold font-nikokaku'>
+                            ＼無料キャンペーン実施中／
                         </motion.div>
 
                         <Link
                             target="_blank"
                             href={resources.links.line}
-                            className="relative mx-auto flex text-size1 w-full">
+                            className="relative mx-auto flex text-size1">
                             <Image src={button1} alt="Background" className="h-[74px]"  />
 
                             <div className="absolute inset-0 flex items-center justify-center gap-3 text-center">
                                 <Image src={Line} alt="Line" className="w-12" />
-                                <div>
-                                    <div className="mx-auto text-title2 font-dot leading-1">今すぐ</div>
-                                    <div className="mx-auto text-title2 font-dot leading-1">メンバーになる</div>
+                                <div className='pr-6 '>
+                                    <div className="mx-auto text-[1.6rem] leading-8 font-dot leading-1 font-bold">今すぐ</div>
+                                    <div className="mx-auto text-[1.6rem] leading-8 font-dot leading-1 font-bold">メンバーになる</div>
                                 </div>
                             </div>
                         </Link>
@@ -51,11 +51,11 @@ export const ContactSection = () => {
                         <Link
                             target="_blank"
                             href={resources.links.mail}
-                            className="mt-2 relative mx-auto flex text-size1 w-full px-8">
+                            className="mt-2 relative mx-auto flex text-size1 px-8">
                             <Image src={button2} alt="Background" className="h-[60px]" />
 
                             <div className="absolute inset-0 flex items-center justify-center gap-3 text-center">
-                                    <div className="mx-auto text-title3 font-dot">    メールでお問い合わせ</div>
+                                    <div className="mx-auto text-title5 leading-8 font-dot font-bold">メールでお問い合わせ</div>
                             </div>
                         </Link>
 

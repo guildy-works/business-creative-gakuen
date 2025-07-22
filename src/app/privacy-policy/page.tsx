@@ -2,6 +2,7 @@
 
 import { SectionType1 } from "@/components/SectionType1"
 import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation"
+import { resources } from "@/resources"
 import { DOMMotionComponents, motion, useInView } from "motion/react"
 import { ReactNode } from "react"
 
@@ -13,7 +14,7 @@ export default function PrivacyPolicy() {
             {/* 前文 */}
             <section className="mb-6">
                 <p>
-                    中四国クリエイティブ学園運営者（以下「サロン運営者」といいます。）は、<br/>
+                    {resources.siteTitle}運営者（以下「サロン運営者」といいます。）は、<br/>
                     本ウェブサイト上で提供するサービス（以下「本サロン」といいます）における、<br/>
                     メンバーの個人情報の取扱いについて、<br/>
                     以下のとおりプライバシーポリシー（以下「本ポリシー」といいます）を定めます。

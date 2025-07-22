@@ -4,11 +4,9 @@ import clsx from "clsx";
 import { ReactNode } from "react";
 import { StaticImageData } from "next/image";
 import Issue1 from "@/assets/issue1.webp";
-import { ServiceDialog } from "@/components/ServiceDialog";
 import { PlanTable } from "./PlanTable";
 import { motion } from "motion/react"
 import { resources } from "@/resources";
-import { HighlightMarker } from "@/components/HighlightMarker";
 import Image from 'next-export-optimize-images/picture';
 import character1 from "@/assets/character3.png";
 import character2 from "@/assets/character2.png";
@@ -25,7 +23,7 @@ export const PlansSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
                     <PlanItem title={<>フリープラン</>}
                         price="¥0/月"
-                        content={<ul className="list-[disclosure-closed] text-size3 font-bold leading-4 px-2">
+                        content={<ul className="list-[disclosure-closed] text-size2 font-bold leading-4 px-2">
                             <li>イベントの参加</li>
                             <li>地域やビジネス情報の受け取り</li>
                             <li>求人や案件、仕事への応募</li>
@@ -37,7 +35,7 @@ export const PlansSection = () => {
                     <PlanItem title={<>ビジネスプラン</>}
                         imageClass="h-12"
                         price="¥3,000/月"
-                        content={<ul className="list-[disclosure-closed] text-size3 font-bold leading-4 px-2">
+                        content={<ul className="list-[disclosure-closed] text-size2 font-bold leading-4 px-2">
                             <li>フリープラン機能</li>
                             <li>交流会が全て無料</li>
                             <li>投稿や宣伝し放題</li>
@@ -49,7 +47,7 @@ export const PlansSection = () => {
                     <PlanItem title={<>スポンサープラン</>}
                         imageClass="h-10"
                         price="¥10,000/月"
-                        content={<ul className="list-[disclosure-closed] text-size3 font-bold leading-4 px-2">
+                        content={<ul className="list-[disclosure-closed] text-size2 font-bold leading-4 px-2">
                             <li>ビシネスプラン機能</li>
                             <li>投稿を常にトップ固定表示</li>
                             <li>イベント毎に宣伝</li>
@@ -58,7 +56,7 @@ export const PlansSection = () => {
                     />
                 </div>
             </div>
-{/* 
+            {/* 
             <ServiceDialog buttonText="詳細" >
                 <PlanTable />
             </ServiceDialog> */}
@@ -76,26 +74,23 @@ const PlanItem = ({ title, price, content, delay, imageClass, href, src }: {
     src: StaticImageData
 }) => {
     return (
-        <motion.div
-            viewport={{ once: true }}
-            transition={{
-                scale: { type: "spring", duration: 0.5, delay },
-                opacity: { duration: 0.3, },
-            }}
-            initial={{ scale: 0.9, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
+        <FadeAndSlideScrollTriggerAnimation
             className={clsx(
                 "relative h-full justify-center flex border-2 border-black bg-white overflow-hidden rounded-md",
             )}>
-            <div className="mt-auto">
+            <motion.div className="mt-auto"
+                viewport={{ once: true }}
+                  transition={{ duration: 0.1, delay: 0.3 }}
+                initial={{ transform: "translateY(100%)" }}
+                whileInView={{ transform: "translateY(0%)" ,}}>
                 <Image
                     src={src}
                     alt="プランキャラクター"
                     className={clsx("object-contain", imageClass)}
                 />
-            </div>
+            </motion.div>
 
-            <div className="flex flex-col items-center justify-center gap-2 py-8">
+            <div className="flex flex-col items-center justify-center gap-2 py-8 min-w-[160px]">
                 <div>
                     <h2 className=" text-title3 font-nikokaku text-center">{title}</h2>
                     <div className="w-[120px] mx-auto">
@@ -103,18 +98,23 @@ const PlanItem = ({ title, price, content, delay, imageClass, href, src }: {
                     </div>
                 </div>
 
-                <h3 className="text-size1 font-bold">{price}</h3>
+                <h3 className="text-title5 font-bold">{price}</h3>
 
                 <div className="">{content}</div>
             </div>
 
-            <div className="mt-auto">
+            <motion.div
+                viewport={{ once: true }}
+                initial={{ transform: "translateY(100%)" }}
+                whileInView={{ transform: "translateY(0%)" }}
+                         transition={{ duration: 0.1, delay: 0.35 }}
+                className="mt-auto">
                 <Image
                     src={src}
                     alt="プランキャラクター"
                     className={clsx("object-contain", imageClass)}
                 />
-            </div>
-        </motion.div >
+            </motion.div>
+        </FadeAndSlideScrollTriggerAnimation>
     );
 }
