@@ -6,7 +6,6 @@ const config = {
         ['png', 'webp'],
         ['jpg', 'webp'],
     ],
-    basePath: '/tsunagaru-lab-new',
 }
 
 module.exports = config
