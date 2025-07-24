@@ -54,21 +54,21 @@ const Comments = () => {
         <>
             <TypeWriterScrollTriggerAnimation
                 onComplete={() => setIndex(index + 1)}
-                span={25}
+                span={40}
                 delay={1200}
                 tag="div" className="overflow-hidden" text="ココは学園ではありません。RPGです。" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 1}
-                span={25}
+                span={40}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="overflow-hidden" delay={100} text="「スキルアップするコミュニティ」です。" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 2}
-                span={25}
+                span={40}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="mt-4 overflow-hidden" delay={100} text="あなたはこのコミュニティの主人公。"
             />
@@ -76,28 +76,28 @@ const Comments = () => {
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 3}
-                span={25}
+                span={40}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="mt-4 text-red-700 overflow-hidden" delay={100} text="どんなビジネスでもクリエイティブな発想は必要不可欠。" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 4}
-                span={25}
+                span={40}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="mt-4  overflow-hidden" delay={100} text="中四国で活躍する経営者やフリーランス、同業種と繋がり" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 5}
-                span={25}
+                span={40}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="overflow-hidden" delay={100} text="交流から生まれる新しいアイデアで、" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 6}
-                span={25}
+                span={40}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="overflow-hidden" delay={100} text="スキルアップしましょう。" />
 
