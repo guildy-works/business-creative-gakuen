@@ -1,10 +1,6 @@
 'use client'
 
-import { SectionType1 } from "@/components/SectionType1"
-import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation"
 import { resources } from "@/resources"
-import { DOMMotionComponents, motion, useInView } from "motion/react"
-import { ReactNode } from "react"
 
 export default function PrivacyPolicy() {
     return (<div className=" flex flex-col relative">

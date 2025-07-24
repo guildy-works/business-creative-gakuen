@@ -90,7 +90,7 @@ const PlanItem = ({ title, price, content, delay, imageClass, href, src }: {
                 />
             </motion.div>
 
-            <div className="flex flex-col items-center justify-center gap-2 py-8 min-w-[160px]">
+            <div className="flex flex-col items-center justify-center gap-2 py-8 min-w-[180px]">
                 <div>
                     <h2 className=" text-title3 font-nikokaku text-center">{title}</h2>
                     <div className="w-[120px] mx-auto">

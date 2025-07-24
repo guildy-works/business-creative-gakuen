@@ -51,21 +51,21 @@ export const DiscordWidget = () => {
             <p className='mt-2 text-title5'>{date.getFullYear()}年{date.getMonth() + 1}月時点のメンバー数 </p>
             <div className='gap-4'>
                 <div className='flex items-center gap-2 mt-1 text-title5'>
-                    <span className="relative flex size-5">
-                        <span className="absolute inline-flex h-full w-full animate-ping bg-yellow-400 opacity-50"></span>
-                        <span className="relative inline-flex size-5 bg-yellow-500"></span>
+                    <span className="relative flex size-5 mt-2">
+                        <span className="absolute inline-flex h-full w-full animate-ping bg-yellow-500 opacity-60"></span>
+                        <span className="relative inline-flex size-4 m-auto bg-yellow-500"></span>
                     </span>
-                    <span className='ml-2 sm:ml-4 flex items-baseline'>
+                    <span className='ml-2 sm:ml-4 flex items-center'>
                         <big> {isLoading ? '...' : onlineCount}</big>
                         <span>人がオンライン</span>
                     </span>
                 </div>
 
                 <div className='flex items-center gap-2 mt-1 text-title5'>
-                    <span className="relative flex size-5">
-                        <span className="relative inline-flex size-5 bg-gray-300"></span>
+                    <span className="relative flex size-5 mt-2">
+                        <span className="relative flex size-4 m-auto bg-gray-300"></span>
                     </span>
-                    <span className='ml-2 sm:ml-4 items-baseline'>
+                    <span className='ml-2 sm:ml-4 flex items-center leading-1'>
                         <big> {totalMembers}</big>
                         <span>人がメンバー</span>
                     </span>

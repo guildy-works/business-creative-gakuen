@@ -30,7 +30,7 @@ const config: Config = {
             size2: ["min(3.6vw, 0.9rem)", { letterSpacing: "0.04rem", lineHeight: "1.2rem", fontWeight: "400" }],
             size1: ["min(3.8vw, 1.05rem)", { letterSpacing: "0.04rem", lineHeight: "1.2rem", fontWeight: "400" }],
             title5: ['min(4.2vw, 1.2rem)', { letterSpacing: "0rem", lineHeight: "1.8rem", fontWeight: "400" }],
-            title4: ['min(4.8vw, 2rem)', { letterSpacing: "0rem", lineHeight: "1.8rem", fontWeight: "400" }],
+            title4: ['min(4.8vw, 1.4rem)', { letterSpacing: "0rem", lineHeight: "1.8rem", fontWeight: "400" }],
             title3: ['min(6.6vw, 2.2rem)', { letterSpacing: "0rem", lineHeight: "3rem", fontWeight: "400" }],
             title2: ['min(8.8vw, 3.5rem)', { letterSpacing: "0rem", lineHeight: "3rem", fontWeight: "400" }],
             title1: ['min(10.5vw, 4rem)', { letterSpacing: "0rem", lineHeight: "4rem", fontWeight: "400" }],

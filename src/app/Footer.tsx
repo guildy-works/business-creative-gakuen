@@ -1,10 +1,5 @@
 import Link from "next/link";
-import { menuItems } from "./Header";
-import { SnsLinkList } from "@/components/SnsLinkList";
-import Logo from "@/assets/logo.png";
-import Image from 'next-export-optimize-images/picture';
-import { DOMMotionComponents, motion } from "motion/react"
-import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation";
+import { motion } from "motion/react"
 import { resources } from "@/resources";
 
 export const footerItems = [

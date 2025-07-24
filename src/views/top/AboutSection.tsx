@@ -31,8 +31,8 @@ export default function AboutSection() {
             <BlackTextBox className="text-center !p-8 !py-6" isOutline={false}>
                 <h2 className="text-title2 font-nikokaku tracking-tighter">出会いから<span className="text-color2">アイデア</span>を</h2>
                 <h3 className="text-[1.1rem] tracking-[0.08rem] mt-2 font-nikokaku">
-                    <span className="text-red-600">初心者以上</span>
-                    の人が集まり、スキルアップを実現
+                    <span className="text-red-600">初心者</span>
+                    から上級者が集まり、スキルアップを実現
                 </h3>
             </BlackTextBox>
 
@@ -183,15 +183,15 @@ export default function AboutSection() {
                 </NumberBorderBox>
 
                 <NumberBorderBox className="w-full !p-0" innerClassName="!pt-0">
-                    <div className="flex flex-col p-4 items-center justify-center">
+                    <div className="flex flex-col p-3 items-center justify-center">
                         <div className="flex flex-col px-1 items-center justify-center text-center">
                             <h3 className="text-title3 font-bold">実際の様子</h3>
-                            <p className="text-size-p mt-2 font-bold leading-4">
+                            <p className="text-size-p font-bold leading-4">
                                 <Link href={resources.links.discordOfficial} target="_blank" className="text-color10 underline" rel="noopener noreferrer">Discord</Link>
                                 という無料アプリを使用します
                             </p>
                         </div>
-                        <div className="flex flex-col px-1 w-96 mt-3">
+                        <div className="flex flex-col px-1 w-full mt-2">
                             <Image src={About06} alt="Free Business Meeting" />
                         </div>
                     </div>

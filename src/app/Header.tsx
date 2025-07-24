@@ -108,17 +108,16 @@ export const Header = () => {
                         href={resources.links.line}
                         target='_blank'
                         className="animate-pulse-scale min-w-32 gap-2 rounded-lg flex font-dot items-center justify-center bg-color2 py-2 px-4 font-semibold focus:outline-none data-[hover]:bg-color2/80">
-                        入会はコチラ
+                        メンバーになる
                     </Link>
                 </nav>
 
                 <Link
                     href={resources.links.line}
                     target='_blank'
-                    className="animate-pulse-scale md:hidden font-dot ml-auto min-w-32 mr-3 gap-2 rounded-lg flex items-center justify-center bg-color2 py-1 px-4 font-semibol shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-color2/80">
-                    入会はコチラ
-
-                    <Image src={Line} alt="Line" className="w-6" />
+                    className="animate-pulse-scale md:hidden font-dot ml-auto mr-3 gap-2 rounded-lg flex items-center justify-center bg-color2 py-2 px-2 focus:outline-none data-[hover]:bg-color2/80">
+                    <div className='text-size1 '>メンバーになる</div>
+                    <Image src={Line} alt="Line" className="w-6 mt-1" />
                 </Link>
 
                 {/* Mobile */}

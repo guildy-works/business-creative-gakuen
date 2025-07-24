@@ -1,10 +1,11 @@
 import { ReactNode } from "react"
 import { Options, Splide, SplideSlide, } from "@splidejs/react-splide";
-import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation";
 import { resources } from "@/resources";
 import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/FadeAndSlideScrollTriggerAnimation";
 import Image from 'next-export-optimize-images/picture';
 import { StaticImageData } from "next/image";
+import { TypeWriterScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/TypeWriterScrollTriggerAnimation";
+import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewScrollTriggerAnimation";
 
 export const MembersSection2 = () => {
 
@@ -49,11 +50,12 @@ export const MembersSection2 = () => {
 
             </Splide>
 
-            <SkewScrollTriggerAnimation skewPanelClass="!bg-[#29adff]" className="font-dot text-center text-size1 leading-5">
+            <FadeAndSlideScrollTriggerAnimation className="font-dot text-center text-size1 leading-5">
                 フリーランス、経営者、<br />
                 インフルエンサー、アフィリエイターなど<br />
                 色んなクリエイターがいます
-            </SkewScrollTriggerAnimation>
+            </FadeAndSlideScrollTriggerAnimation>
+
         </div>
     )
 }

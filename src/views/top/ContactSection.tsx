@@ -42,8 +42,7 @@ export const ContactSection = () => {
                             <div className="absolute inset-0 flex items-center justify-center gap-3 text-center">
                                 <Image src={Line} alt="Line" className="w-12" />
                                 <div className='pr-6 '>
-                                    <div className="mx-auto text-[1.6rem] leading-8 font-dot leading-1 font-bold">今すぐ</div>
-                                    <div className="mx-auto text-[1.6rem] leading-8 font-dot leading-1 font-bold">メンバーになる</div>
+                                    <div className="mx-auto text-[2rem] leading-8 font-dot font-bold">メンバーになる</div>
                                 </div>
                             </div>
                         </Link>
