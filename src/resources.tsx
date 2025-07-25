@@ -37,7 +37,7 @@ export const resources = {
         },
     ],
     links: {
-        mail: "mailto:chugoku.shikoku.creative@gmail.com",
+        email: "chugoku.shikoku.creative@gmail.com",
         line: "https://s.lmes.jp/landing-qr/2006439228-oBz5G5DO?uLand=NxpEQ9",
         discord: "https://discord.gg/J8chE8qKky?openExternalBrowser=1",
         personalLine: "https://s.lmes.jp/landing-qr/2006439228-oBz5G5DO?uLand=NxpEQ9",
