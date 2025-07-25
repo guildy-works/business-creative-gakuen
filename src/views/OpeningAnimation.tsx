@@ -14,8 +14,37 @@ export const OpeningAnimation = (props: { onOpeningAnimationCompleted: () => voi
 
     const [num, setNum] = useState(-1);
     const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+    const [imagesLoaded, setImagesLoaded] = useState(false);
 
+    // 画像をプリロードする
     useEffect(() => {
+        const preloadImages = async () => {
+            const imagePromises = images.map((src) => {
+                return new Promise<void>((resolve, reject) => {
+                    const img = new Image();
+                    img.onload = () => resolve();
+                    img.onerror = () => reject();
+                    img.src = src.src || src;
+                });
+            });
+
+            try {
+                await Promise.all(imagePromises);
+                setImagesLoaded(true);
+            } catch (error) {
+                console.error('画像のプリロードに失敗しました:', error);
+                // エラーが発生してもアニメーションを開始
+                setImagesLoaded(true);
+            }
+        };
+
+        preloadImages();
+    }, []);
+
+    // 画像がロードされてからアニメーションを開始
+    useEffect(() => {
+        if (!imagesLoaded) return;
+
         const interval = setInterval(() => {
             setNum(prevNum => {
                 if (prevNum >= images.length) {
@@ -26,10 +55,10 @@ export const OpeningAnimation = (props: { onOpeningAnimationCompleted: () => voi
                 }
                 return prevNum + 1;
             });
-        }, 135); // 0.5秒ごとに切り替え
+        }, 135); // 0.135秒ごとに切り替え
 
         return () => clearInterval(interval);
-    }, []);
+    }, [imagesLoaded]);
 
     // アニメーション完了時のコールバック呼び出し
     useEffect(() => {
