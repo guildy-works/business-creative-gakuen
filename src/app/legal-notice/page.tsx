@@ -1,5 +1,7 @@
 'use client'
 
+import { resources } from "@/resources"
+
 export default function LegalNotice() {
     return (<div className="p-8 max-w-2xl mx-auto">
         <h1 className="text-title1 font-bold text-center mb-8">特定商取引法に基づく表記</h1>
@@ -29,10 +31,10 @@ export default function LegalNotice() {
             <p>
                 メールアドレス：{" "}
                 <a
-                    href="mailto:tsunalab.info@gmail.com"
+                    href={"mailto:" + resources.links.mail}
                     className="text-blue-600 hover:underline"
                 >
-                    tsunalab.info@gmail.com
+                  {resources.links.mail}
                 </a>
             </p>
         </section>

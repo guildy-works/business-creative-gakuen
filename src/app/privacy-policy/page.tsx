@@ -10,9 +10,9 @@ export default function PrivacyPolicy() {
             {/* 前文 */}
             <section className="mb-6">
                 <p>
-                    {resources.siteTitle}運営者（以下「サロン運営者」といいます。）は、<br/>
-                    本ウェブサイト上で提供するサービス（以下「本サロン」といいます）における、<br/>
-                    メンバーの個人情報の取扱いについて、<br/>
+                    {resources.siteTitle}運営者（以下「サロン運営者」といいます。）は、<br />
+                    本ウェブサイト上で提供するサービス（以下「本サロン」といいます）における、<br />
+                    メンバーの個人情報の取扱いについて、<br />
                     以下のとおりプライバシーポリシー（以下「本ポリシー」といいます）を定めます。
                 </p>
             </section>
@@ -125,10 +125,10 @@ export default function PrivacyPolicy() {
                 <p className="mt-4">
                     Eメールアドレス：{" "}
                     <a
-                        href="mailto:tsunalab.info@gmail.com"
+                        href={"mailto:" + resources.links.mail}
                         className="text-blue-600 hover:underline"
                     >
-                        tsunalab.info@gmail.com
+                        {resources.links.mail}
                     </a>
                 </p>
             </section>
