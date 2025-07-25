@@ -2,7 +2,7 @@ import { resources } from "@/resources";
 
 export default function TermsOfService() {
     return (<div className="p-8 max-w-5xl mx-auto">
-        <h1 className="text-title1 font-bold text-center mb-8">利用規約/免責事項</h1>
+        <h1 className="text-title3 font-bold text-center mb-8">利用規約/免責事項</h1>
 
         {/* 利用規約 */}
         <section className="mb-6">
@@ -14,7 +14,7 @@ export default function TermsOfService() {
 
         {/* 第1条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第1条（適用）</h2>
+            <h2 className="text-title4 font-bold mb-4">第1条（適用）</h2>
             <p>
                 本規約は、メンバーとサロン運営者との間の本サロンの利用に関わる一切の関係に適用されるものとします。本サロンは、本規約のほか、プライバシーポリシー、本サロン運営に関する注意点等を本サロンを運営するWebサイト（以下「本サイト」といいます）上に表示することがありますが、これらの表示も本規約の一部を構成し、本サロンを利用するための一体となった規律（以下「本規約等」といいます）であるものとします。
             </p>
@@ -25,7 +25,7 @@ export default function TermsOfService() {
 
         {/* 第2条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第2条（利用登録）</h2>
+            <h2 className="text-title4 font-bold mb-4">第2条（利用登録）</h2>
             <p>
                 登録希望者がサロン運営者の定める方法によって利用登録を申請し、サロン運営者がこれを承認することによって、利用登録が完了するものとします。サロン運営者は、利用登録の申請者に以下の事由があると判断した場合、利用登録の申請を承認しないことがあり、その理由については一切の開示義務を負わないものとします。
             </p>
@@ -41,7 +41,7 @@ export default function TermsOfService() {
 
         {/* 第3条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第3条（利用料金および支払方法）</h2>
+            <h2 className="text-title4 font-bold mb-4">第3条（利用料金および支払方法）</h2>
             <p>
                 メンバーは、本サロン利用の対価として、サロン運営者が別途定め、本ウェブサイトに表示する利用料金を、サロン運営者が指定する方法により支払うものとします。
             </p>
@@ -55,7 +55,7 @@ export default function TermsOfService() {
 
         {/* 第4条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第4条（解約方法）</h2>
+            <h2 className="text-title4 font-bold mb-4">第4条（解約方法）</h2>
             <p>
                 本サロンの解約の際は、本サロンの定める退会手続きにより退会できるものとします。当月中の退会の場合は、その日よりすべての権利を失効します。また、退会処理を忘れたことにより支払いが継続されていたとしても返金はされません。
             </p>
@@ -63,7 +63,7 @@ export default function TermsOfService() {
 
         {/* 第5条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第5条（禁止事項）</h2>
+            <h2 className="text-title4 font-bold mb-4">第5条（禁止事項）</h2>
             <p>メンバーは、本サロンの利用にあたり、以下の行為をしてはなりません。</p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
                 <li>法令または公序良俗に違反する行為</li>
@@ -84,7 +84,7 @@ export default function TermsOfService() {
 
         {/* 第6条（本サロンの提供の停止等） */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第6条（本サロンの提供の停止等）</h2>
+            <h2 className="text-title4 font-bold mb-4">第6条（本サロンの提供の停止等）</h2>
             <p>サロン運営者は、以下のいずれかの事由があると判断した場合、
                 メンバーに事前に通知することなく本サロンの全部または一部の提供を停止または中断することができるものとします。</p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
@@ -98,7 +98,7 @@ export default function TermsOfService() {
 
         {/* 第7条（利用制限および登録抹消） */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第7条（利用制限および登録抹消）</h2>
+            <h2 className="text-title4 font-bold mb-4">第7条（利用制限および登録抹消）</h2>
             <p>サロン運営者は、以下の場合には、事前の通知なく、メンバーに対して、本サロンの全部もしくは一部の利用を制限し、またはメンバーとしての登録を抹消することができるものとします。</p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
                 <li>本規約のいずれかの条項に違反した場合</li>
@@ -120,7 +120,7 @@ export default function TermsOfService() {
 
         {/* 第8条（コンテンツに関する権利） */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第8条（コンテンツに関する権利）</h2>
+            <h2 className="text-title4 font-bold mb-4">第8条（コンテンツに関する権利）</h2>
             <p>
                 コンテンツについては、その内容の正確性、真実性、合法性、<br />
                 安全性等を保証するものではありません。<br />
@@ -154,7 +154,7 @@ export default function TermsOfService() {
 
         {/* 第9条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第9条（免責事項）</h2>
+            <h2 className="text-title4 font-bold mb-4">第9条（免責事項）</h2>
             <p>
                 サロン運営者の債務不履行責任は、サロン運営者の故意または重過失によらない場合には免責されるものとします。
                 サロン運営者は、何らかの理由によって責任を負う場合にも、通常生じうる損害の範囲内かつ有料サービスにおいては代金額の範囲内においてのみ賠償の責任を負うものとします。
@@ -166,7 +166,7 @@ export default function TermsOfService() {
 
         {/* 第10条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第10条（本サロンの変更等）</h2>
+            <h2 className="text-title4 font-bold mb-4">第10条（本サロンの変更等）</h2>
             <p>
                 本サロンは、メンバーにあらかじめ告知したうえで、本サロンの内容を変更し又は本サロンの提供を中止することができるものとします。
                 これによってメンバーに生じた損害について一切の責任を負いません。
@@ -175,7 +175,7 @@ export default function TermsOfService() {
 
         {/* 第11条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第11条（利用規約の変更）</h2>
+            <h2 className="text-title4 font-bold mb-4">第11条（利用規約の変更）</h2>
             <p>
                 本サロンは、本規約の内容について、必要に応じて変更することができます。この場合、本サロンが変更後の本規約を所定の場所に公表するものとします。
                 ただし、メンバーに不利益が生じる変更については、あらかじめ公表を行い一定期間経過後に行うものとします。
@@ -184,7 +184,7 @@ export default function TermsOfService() {
 
         {/* 第12条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第12条（反社会的勢力の排除）</h2>
+            <h2 className="text-title4 font-bold mb-4">第12条（反社会的勢力の排除）</h2>
             <ol className="list-decimal pl-6 space-y-2">
                 <li>
                     本条において、反社会的勢力とは、次の各号に該当する法人、団体又は個人をいいます。
@@ -208,7 +208,7 @@ export default function TermsOfService() {
 
         {/* 第13条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第13条（通知または連絡）</h2>
+            <h2 className="text-title4 font-bold mb-4">第13条（通知または連絡）</h2>
             <p>
                 メンバーとサロン運営者との間の通知または連絡は、サロン運営者の定める方法によって行うものとします。
             </p>
@@ -216,7 +216,7 @@ export default function TermsOfService() {
 
         {/* 第14条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第14条（権利義務の譲渡の禁止）</h2>
+            <h2 className="text-title4 font-bold mb-4">第14条（権利義務の譲渡の禁止）</h2>
             <p>
                 メンバーは、サロン運営者の書面による事前の承諾なく、
                 利用契約上の地位または本規約に基づく権利もしくは義務を第三者に譲渡し、
@@ -226,7 +226,7 @@ export default function TermsOfService() {
 
         {/* 第15条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第15条（秘密の保持）</h2>
+            <h2 className="text-title4 font-bold mb-4">第15条（秘密の保持）</h2>
             <p>
                 メンバーは、本サロンにおいて知り得た動画コンテンツ、
                 アカウントその他の情報を秘密情報として取扱い、
@@ -236,7 +236,7 @@ export default function TermsOfService() {
 
         {/* 第16条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第16条（損害賠償）</h2>
+            <h2 className="text-title4 font-bold mb-4">第16条（損害賠償）</h2>
             <p>
                 本サロンは、メンバーに対して、メンバーの故意、過失、本規約違反によって本サロンに生じた直接的又は間接的な損害について、損害賠償を請求できるものとします。
             </p>
@@ -244,7 +244,7 @@ export default function TermsOfService() {
 
         {/* 第17条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第17条（協議）</h2>
+            <h2 className="text-title4 font-bold mb-4">第17条（協議）</h2>
             <p>
                 本規約に定めのない事項、又は本規約の条項の解釈に疑義が生じた事項については、
                 誠意をもって協議し解決をはかるものとします。
@@ -253,7 +253,7 @@ export default function TermsOfService() {
 
         {/* 第18条 */}
         <section className="mb-6">
-            <h2 className="text-title2 font-bold mb-4">第18条（準拠法・裁判管轄）</h2>
+            <h2 className="text-title4 font-bold mb-4">第18条（準拠法・裁判管轄）</h2>
             <p>
                 本規約の解釈にあたっては、日本法を準拠法とします。本サロンに関して紛争が生じた場合には、
                 サロン運営者の在住地を管轄する裁判所を専属的合意管轄とします。
