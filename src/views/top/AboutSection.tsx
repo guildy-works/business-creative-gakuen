@@ -31,8 +31,8 @@ export default function AboutSection() {
             <BlackTextBox className="text-center !p-8 !py-6" isOutline={false}>
                 <h2 className="text-title2 font-nikokaku tracking-tighter">出会いから<span className="text-color2">アイデア</span>を</h2>
                 <h3 className="text-[1.1rem] tracking-[0.08rem] mt-2 font-nikokaku">
-                    <span className="text-red-600">初心者</span>
-                    から上級者が集まり、スキルアップを実現
+                    <span className="text-red-600">初心者から上級者</span>
+                    が集まり、スキルアップを実現
                 </h3>
             </BlackTextBox>
 

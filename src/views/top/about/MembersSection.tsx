@@ -13,7 +13,6 @@ export const MembersSection = () => {
             <FadeAndSlideScrollTriggerAnimation
                 className="relative mx-auto px-16 font-bold font-dot bg-black text-white p-4 rounded-xl border-4 border-white">
                 <TypeWriterScrollTriggerAnimation tag="div" className="text-title3" span={70} delay={300} text="学園長があらわれた！" />
-                <TypeWriterScrollTriggerAnimation tag="div" className="text-title3" span={70} delay={1200} text="学園長 小早川"  />
                
                 <svg
                     className="animate-pulse-y rotate-90 absolute bottom-0 right-4"
@@ -54,21 +53,20 @@ const Comments = () => {
         <>
             <TypeWriterScrollTriggerAnimation
                 onComplete={() => setIndex(index + 1)}
-                span={40}
-                delay={1200}
+                span={25}
                 tag="div" className="overflow-hidden" text="ココは学園ではありません。RPGです。" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 1}
-                span={40}
+                span={25}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="overflow-hidden" delay={100} text="「スキルアップするコミュニティ」です。" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 2}
-                span={40}
+                span={25}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="mt-4 overflow-hidden" delay={100} text="あなたはこのコミュニティの主人公。"
             />
@@ -76,28 +74,28 @@ const Comments = () => {
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 3}
-                span={40}
+                span={25}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="mt-4 text-red-700 overflow-hidden" delay={100} text="どんなビジネスでもクリエイティブな発想は必要不可欠。" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 4}
-                span={40}
+                span={25}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="mt-4  overflow-hidden" delay={100} text="中四国で活躍する経営者やフリーランス、同業種と繋がり" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 5}
-                span={40}
+                span={25}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="overflow-hidden" delay={100} text="交流から生まれる新しいアイデアで、" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
                 in={index >= 6}
-                span={40}
+                span={25}
                 onComplete={() => setIndex(index + 1)}
                 tag="div" className="overflow-hidden" delay={100} text="スキルアップしましょう。" />
 

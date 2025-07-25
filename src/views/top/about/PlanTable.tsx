@@ -25,7 +25,7 @@ export const PlanTable = () => {
         <div className="bg-gradient1 size-full">
             <div className="p-4 text-center">
                 <h1 className="text-[1.2rem]">
-                    中四国クリエイティブ学園(Discord内)の各チャンネル一覧
+                    {resources.siteTitle}学園(Discord内)の各チャンネル一覧
                 </h1>
                 <h4>プランによってチャンネルの利用が制限されています</h4>
             </div>
