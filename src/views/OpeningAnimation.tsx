@@ -49,7 +49,7 @@ export const OpeningAnimation = (props: { onOpeningAnimationCompleted: () => voi
     return (<>
         <div className="fixed inset-0 w-svh h-svh bg-black z-50" />
         {num >= 0 && num < images.length && <Image src={images[num]} className="fixed inset-0  w-svh h-svh z-50" alt={`Opening image ${num + 1}`} />}
-        {num >= 0 && num === images.length && <div className="fixed inset-0 w-svh h-svh bg-blue-500 z-50" />}
+        {num >= 0 && num === images.length && <div className="fixed inset-0 w-svh h-svh bg-[#009fe8] z-50" />}
     </>
 
     );
