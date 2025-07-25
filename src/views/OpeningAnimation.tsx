@@ -21,10 +21,10 @@ export const OpeningAnimation = (props: { onOpeningAnimationCompleted: () => voi
         const preloadImages = async () => {
             const imagePromises = images.map((src) => {
                 return new Promise<void>((resolve, reject) => {
-                    const img = new Image();
+                    const img = new window.Image();
                     img.onload = () => resolve();
                     img.onerror = () => reject();
-                    img.src = src.src || src;
+                    img.src = src.src;
                 });
             });
 
