@@ -49,7 +49,7 @@ export const ContactSection = () => {
 
                         <Link
                             target="_blank"
-                            href={resources.links.email}
+                            href={"mailto:"+resources.links.email}
                             className="mt-2 relative mx-auto flex text-size1 px-8">
                             <Image src={button2} alt="Background" className="h-[60px]" />
 
