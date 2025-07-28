@@ -35,6 +35,7 @@ export const PlansSection = () => {
                     <PlanItem title={<>ビジネスプラン</>}
                         imageClass="h-12"
                         price="¥3,000/月"
+                        isRecommended={true}
                         content={<ul className="list-[disclosure-closed] text-size2 font-bold leading-4 px-2">
                             <li>フリープラン機能</li>
                             <li>交流会が全て無料</li>
@@ -46,7 +47,7 @@ export const PlansSection = () => {
                     />
                     <PlanItem title={<>スポンサープラン</>}
                         imageClass="h-10"
-                        price="¥10,000/月"
+                        price="¥50,000/月"
                         content={<ul className="list-[disclosure-closed] text-size2 font-bold leading-4 px-2">
                             <li>ビシネスプラン機能</li>
                             <li>投稿を常にトップ固定表示</li>
@@ -64,12 +65,13 @@ export const PlansSection = () => {
     )
 }
 
-const PlanItem = ({ title, price, content, delay, imageClass, href, src }: {
+const PlanItem = ({ title, price, content, delay, imageClass, href, src,isRecommended }: {
     delay?: number,
     title: ReactNode,
     price: ReactNode,
     content: ReactNode,
     href?: string,
+    isRecommended?: boolean,
     imageClass?: string,
     src: StaticImageData
 }) => {
@@ -102,6 +104,14 @@ const PlanItem = ({ title, price, content, delay, imageClass, href, src }: {
 
                 <div className="">{content}</div>
             </div>
+
+            {
+                isRecommended && (
+                    <div className="absolute text-white top-16 right-4 border-2 border-black bg-[#FF0000] font-nikokaku px-2 py-1 rounded-md text-size1">
+                        超オススメ!!
+                    </div>
+                )
+            }
 
             <motion.div
                 viewport={{ once: true }}
