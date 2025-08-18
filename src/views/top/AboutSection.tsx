@@ -14,7 +14,7 @@ import About02 from "@/assets/about02.png";
 import About03 from "@/assets/about03.png";
 import About04 from "@/assets/about04.png";
 import About05 from "@/assets/フリー商談会.png";
-import About06 from "@/assets/about06.png";
+import About06 from "@/assets/discord.png";
 
 import Chat1 from "@/assets/chat1.png";
 import Chat2 from "@/assets/chat2.png";
@@ -202,4 +202,5 @@ export default function AboutSection() {
 
     );
 }
+
 
