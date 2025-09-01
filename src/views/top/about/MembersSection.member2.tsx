@@ -10,7 +10,8 @@ import { SkewScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations/SkewS
 export const MembersSection2 = () => {
 
     return (
-        <div className="w-full flex flex-col items-center mx-auto gap-8 justify-center bg-image2 py-16">
+        <div className="w-full flex flex-col items-center mx-auto gap-8 justify-center py-16 relative">
+            <div className="bg-image2 absolute inset-0 max-w-6xl mx-auto"/>
 
             <FadeAndSlideScrollTriggerAnimation
                 className="px-8 font-bold font-dot bg-black text-white p-4 rounded-xl border-4 border-white text-title3">

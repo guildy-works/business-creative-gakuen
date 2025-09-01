@@ -11,12 +11,13 @@ export const ContactSection = () => {
 
     return (
         <>
-            <div className="flex items-center relative">
+            <div className="flex items-center relative bg-[#b17262]">
                 <div id="contacts" className="absolute -top-24" />
 
-                <Image src={ContactBackground} className="w-full" alt="ContactBackground" />
+                <Image src={ContactBackground} className="w-full sm:hidden" alt="ContactBackground" />
+                <div className='bg-[#b17262] w-full h-[340px] hidden sm:block' />
 
-                <div className="absolute inset-0 p-8">
+                <div className="absolute inset-0 p-8 max-w-4xl mx-auto">
                     <motion.div
                         viewport={{ once: true }}
                         initial={{ scale: 1.1, opacity: 0 }}

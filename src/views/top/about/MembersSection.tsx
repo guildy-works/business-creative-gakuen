@@ -6,10 +6,10 @@ import { TypeWriterScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimations
 import { useState } from "react";
 
 export const MembersSection = () => {
-    return <div className="">
+    return <div className=" bg-[#77d6ff]">
         <MembersSection2 />
 
-        <div className="flex flex-col bg-image6 w-full ">
+        <div className="flex flex-col bg-image6 w-full max-w-6xl mx-auto">
             <FadeAndSlideScrollTriggerAnimation
                 className="relative mx-auto px-16 font-bold font-dot bg-black text-white p-4 rounded-xl border-4 border-white">
                 <TypeWriterScrollTriggerAnimation tag="div" className="text-title3" span={70} delay={300} text="学園長があらわれた！" />
@@ -22,7 +22,7 @@ export const MembersSection = () => {
                 </svg>
             </FadeAndSlideScrollTriggerAnimation>
 
-            <div className="flex flex-col px-8  py-8">
+            <div className="flex flex-col px-8  py-8 max-w-2xl mx-auto" >
                 <FadeAndSlideScrollTriggerAnimation
                     className="ml-32">
                     <Image src={Profile} alt="中四国 クリエイティブ学園　学園長　小早川" />

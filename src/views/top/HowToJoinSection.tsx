@@ -43,8 +43,8 @@ const data = [
 ]
 
 export const HowToJoinSection = () => {
-    return <SectionBox disablePx disableMaxWidth className="mx-auto max-w-4xl !gap-8 bg-black !my-0">
-        <h2 className="text-title1 font-nikokaku w-full pb-4 text-center max-w-md text-white">
+    return <SectionBox disablePx disableMaxWidth className="sm:py-12 md:py-24 !gap-8 bg-black !my-0">
+        <h2 className="text-title1 font-nikokaku w-full pb-4 text-center max-w-lg text-white">
             メンバーになるには
         </h2>
 

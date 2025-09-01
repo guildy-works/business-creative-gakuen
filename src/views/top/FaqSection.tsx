@@ -6,9 +6,9 @@ import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimatio
 
 export const FaqSection = () => {
     return (
-        <div className="bg-image3 p-8">
-            <h2 className="text-title1 px-12 w-fit mx-auto text-center font-nikokaku bg-black text-white">Q&A</h2>
-            <div className='w-full mt-4'>
+        <div className="bg-image3 p-8 md:p-16">
+            <h2 className=" text-title1 px-12 w-fit mx-auto text-center font-nikokaku bg-black text-white">Q&A</h2>
+            <div className='max-w-4xl mx-auto w-full mt-4'>
                 {resources?.faq.map((x, i) => (
                     <FadeAndSlideScrollTriggerAnimation key={i}>
                         <Disclosure as="div"

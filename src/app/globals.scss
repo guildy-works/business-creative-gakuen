@@ -70,9 +70,10 @@ div {
 
 .bg-image4 {
     background-image: url("/background4.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-color: black;
 }
 
 .bg-image5 {

@@ -27,7 +27,7 @@ import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimatio
 export default function AboutSection() {
     return (
         <div
-            className="bg-image flex flex-col items-center justify-center gap-12 py-8 px-8 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+            className="bg-image flex flex-col items-center justify-center max-w-6xl mx-auto gap-12 py-8 px-8 sm:px-8 md:px-12 lg:px-16 xl:px-20 sm:py-12 md:py-24">
             <BlackTextBox className="text-center !p-8 !py-6" isOutline={false}>
                 <h2 className="text-title2 font-nikokaku tracking-tighter">出会いから<span className="text-color2">アイデア</span>を</h2>
                 <h3 className="text-[1.1rem] tracking-[0.08rem] mt-2 font-nikokaku">
@@ -97,7 +97,7 @@ export default function AboutSection() {
                 </div>
             </BlackTextBox>
 
-            <div className="flex flex-col items-center justify-center gap-4">
+            <div className="flex flex-col items-center justify-center gap-4 sm:gap-8 md:gap-12">
                 <FadeAndSlideScrollTriggerAnimation>
                 <Image src={decoration1} alt="Background" className="animate-pulse-y" />
                 </FadeAndSlideScrollTriggerAnimation>

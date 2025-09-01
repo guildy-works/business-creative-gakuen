@@ -13,7 +13,9 @@ export default function Home() {
         <>
             <TopSection />
 
-            <AboutSection />
+            <div className="bg-[#002500]">
+                <AboutSection />
+            </div>
 
             <MembersSection />
             <PlansSection />

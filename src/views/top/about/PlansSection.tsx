@@ -14,13 +14,13 @@ import character3 from "@/assets/character1.png";
 
 export const PlansSection = () => {
     return (
-        <SectionBox disablePx disableMaxWidth className="bg-image4 w-full py-16 !gap-8 relative !my-0 px-8">
+        <SectionBox disablePx disableMaxWidth className="bg-image4 w-full py-16 !gap-8 relative !my-0 px-8 md:py-48">
             <div id="plans" className="absolute -top-24" />
             <div className="w-full flex flex-col items-center mx-auto gap-8 justify-center">
 
                 <h2 className="text-title1 text-white font-nikokaku">料金プラン</h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
                     <PlanItem title={<>フリープラン</>}
                         price="¥0/月"
                         content={<ul className="list-[disclosure-closed] text-size2 font-bold leading-4 px-2">

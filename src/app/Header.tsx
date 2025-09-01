@@ -30,7 +30,7 @@ export const Header = () => {
 
     return (
         <>
-            <header className="flex w-full items-center sticky top-0 mt-0 z-50 bg-black h-[46px]">
+            <header className="flex w-full items-center sticky top-0 mt-0 z-50 bg-black h-[46px] sm:h-[60px] md:h-[80px]">
                 <Link href="/" className='p-2 flex items-center'>
                     <Image src={Logo} alt="Logo" width={200} className='w-[20px] md:w-[32px]' />
                     <span className='text-[1.1rem] tracking-wide sm:text-[2.1rem] text-white ml-3 mt-1 font-dot'>{resources.siteTitle}</span>
