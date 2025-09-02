@@ -11,7 +11,8 @@ export const MembersSection2 = () => {
 
     return (
         <div className="w-full flex flex-col items-center mx-auto gap-8 justify-center py-16 relative">
-            <div className="bg-image2 absolute inset-0 max-w-6xl mx-auto"/>
+            <div className="hidden md:block bg-image2 absolute inset-0 mx-auto" />
+            <div className="md:hidden bg-image2_mobile absolute inset-0 mx-auto" />
 
             <FadeAndSlideScrollTriggerAnimation
                 className="px-8 font-bold font-dot bg-black text-white p-4 rounded-xl border-4 border-white text-title3">

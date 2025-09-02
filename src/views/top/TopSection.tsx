@@ -3,7 +3,7 @@ import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimatio
 import Balloon from '@/assets/balloon.png';
 import Inspire from '@/assets/Inspire.png';
 import Image from 'next-export-optimize-images/picture';
-import Grassland2 from '../../assets/grassland2.png'
+import Grassland2 from '../../assets/grassland2.jpg'
 import Logo2 from "@/assets/logo2.png";
 import { resources } from '@/resources'
 import comment1 from '@/assets/comment1.png';

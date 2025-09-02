@@ -13,7 +13,7 @@ export default function Home() {
         <>
             <TopSection />
 
-            <div className="bg-[#002500]">
+            <div className="bg-[#00e437]">
                 <AboutSection />
             </div>
 

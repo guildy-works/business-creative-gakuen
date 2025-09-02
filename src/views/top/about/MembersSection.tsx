@@ -9,7 +9,7 @@ export const MembersSection = () => {
     return <div className=" bg-[#77d6ff]">
         <MembersSection2 />
 
-        <div className="flex flex-col bg-image6 w-full max-w-6xl mx-auto">
+        <div className="flex flex-col bg-image6 w-full">
             <FadeAndSlideScrollTriggerAnimation
                 className="relative mx-auto px-16 font-bold font-dot bg-black text-white p-4 rounded-xl border-4 border-white">
                 <TypeWriterScrollTriggerAnimation tag="div" className="text-title3" span={70} delay={300} text="学園長があらわれた！" />
