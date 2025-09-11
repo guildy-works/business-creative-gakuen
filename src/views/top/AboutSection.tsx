@@ -27,7 +27,10 @@ import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimatio
 export default function AboutSection() {
     return (
         <div
-            className="bg-image flex flex-col items-center justify-center max-w-6xl mx-auto gap-12 py-8 px-8 sm:px-8 md:px-12 lg:px-16 xl:px-20 sm:py-12 md:py-24">
+            className="relative  flex flex-col items-center justify-center max-w- sm:max-w-full sm:max-w- mx-auto gap-12 py-8 px-8 sm:px-8"
+        >
+            <div className="bg-image absolute inset-0 m-auto max-w-6xl" />
+
             <BlackTextBox className="text-center !p-8 !py-6" isOutline={false}>
                 <h2 className="text-title2 font-nikokaku tracking-tighter">出会いから<span className="text-color2">アイデア</span>を</h2>
                 <h3 className="text-[1.1rem] tracking-[0.08rem] mt-2 font-nikokaku">
@@ -36,73 +39,73 @@ export default function AboutSection() {
                 </h3>
             </BlackTextBox>
 
-            <BlackTextBox className="ml-auto flex py-6" isOutline>
-                <div className="mt-2">
-                    <svg className="animate-pulse-x"  width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
-                    </svg>
-                </div>
-                <div>
-                    <h2 className="text-title4 font-bold">
-                        <span>中四国最大級</span><br />
-                        <span >オンラインコミュニティ</span>
-                    </h2>
-                    <h3 className="text-size-p mt-4 font-dot pr-24">
-                        ビジネスに必要な<br />
-                        <span className="text-color2">クリエイティブやマーケティングを</span><br />
-                        学んでシェアしてスキルアップ
-                    </h3>
-                    <Image src={Chat1} alt="Background" className="absolute bottom-0 right-0 w-24" />
-                </div>
-            </BlackTextBox>
+            <div className="flex flex-col sm:flex-row gap-12 flex-wrap justify-center">
+                <BlackTextBox className="ml-auto sm:ml-0 flex py-6 w-full sm:w-auto" isOutline>
+                    <div className="mt-2">
+                        <svg className="animate-pulse-x" width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 className="text-title4 font-bold">
+                            <span>中四国最大級</span><br />
+                            <span >オンラインコミュニティ</span>
+                        </h2>
+                        <h3 className="text-size-p mt-4 font-dot pr-24">
+                            ビジネスに必要な<br />
+                            <span className="text-color2">クリエイティブやマーケティングを</span><br />
+                            学んでシェアしてスキルアップ
+                        </h3>
+                        <Image src={Chat1} alt="Background" className="absolute bottom-0 right-0 w-24" />
+                    </div>
+                </BlackTextBox>
 
-            <BlackTextBox className="mr-auto flex py-6 relative" isOutline>
-                <div className="mt-2">
-                    <svg className="animate-pulse-x"  width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
-                    </svg>
-                </div>
-                <div>
-                    <h2 className="text-title4 font-bold">
-                        <span>経営者や</span><br />
-                        <span >フリーランスと共創</span>
-                    </h2>
-                    <h3 className="text-size-p mt-4 font-dot  pr-20">
-                        中四国で活躍している<br />
-                        経営者やフリーランスと交流でき<br />
-                        <span className="text-color2">中四国の人脈が広がる</span><br />
-                    </h3>
-                    <Image src={Chat2} alt="Background" className="absolute bottom-0 right-0 w-24" />
-                </div>
-            </BlackTextBox>
+                <BlackTextBox className="mr-auto sm:mr-0 flex py-6 relative w-full sm:w-auto" isOutline>
+                    <div className="mt-2">
+                        <svg className="animate-pulse-x" width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 className="text-title4 font-bold">
+                            <span>経営者や</span><br />
+                            <span >フリーランスと共創</span>
+                        </h2>
+                        <h3 className="text-size-p mt-4 font-dot  pr-20">
+                            中四国で活躍している<br />
+                            経営者やフリーランスと交流でき<br />
+                            <span className="text-color2">中四国の人脈が広がる</span><br />
+                        </h3>
+                        <Image src={Chat2} alt="Background" className="absolute bottom-0 right-0 w-24" />
+                    </div>
+                </BlackTextBox>
+                <BlackTextBox className="ml-auto sm:ml-0 flex py-6 relative w-full sm:w-auto" isOutline>
+                    <div className="mt-2">
+                        <svg className="animate-pulse-x" width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 className="text-title4 font-bold">
+                            <span>想像を超えた</span><br />
+                            <span >クリエイティブの発見</span>
+                        </h2>
+                        <h3 className="text-size-p mt-4 font-dot pr-20">
+                            同業種や他業種、異なる世代と繋がり<br />
+                            <span className="text-color2">ひとりでは思いつかなかった</span><br />
+                            <span className="text-color2">アイデアに出会える</span>
+                        </h3>
+                        <Image src={Chat3} alt="Background" className="absolute bottom-0 right-0 w-24" />
+                    </div>
+                </BlackTextBox>
+            </div>
 
-
-            <BlackTextBox className="ml-auto flex py-6 relative" isOutline>
-                <div className="mt-2">
-                    <svg className="animate-pulse-x" width="20" height="20" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 5L0 10L0 0L8 5Z" fill="white" />
-                    </svg>
-                </div>
-                <div>
-                    <h2 className="text-title4 font-bold">
-                        <span>想像を超えた</span><br />
-                        <span >クリエイティブの発見</span>
-                    </h2>
-                    <h3 className="text-size-p mt-4 font-dot pr-20">
-                        同業種や他業種、異なる世代と繋がり<br />
-                        <span className="text-color2">ひとりでは思いつかなかった</span><br />
-                        <span className="text-color2">アイデアに出会える</span>
-                    </h3>
-                    <Image src={Chat3} alt="Background" className="absolute bottom-0 right-0 w-24" />
-                </div>
-            </BlackTextBox>
-
-            <div className="flex flex-col items-center justify-center gap-4 sm:gap-8 md:gap-12">
-                <FadeAndSlideScrollTriggerAnimation>
+            <FadeAndSlideScrollTriggerAnimation className="mt-12">
                 <Image src={decoration1} alt="Background" className="animate-pulse-y" />
-                </FadeAndSlideScrollTriggerAnimation>
+            </FadeAndSlideScrollTriggerAnimation>
 
-                <NumberBorderBox className="" numberText={Text01}>
+            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center max-w-screen-md">
+                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4" numberText={Text01}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
                             <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">メンバー交流</h3>
@@ -119,22 +122,23 @@ export default function AboutSection() {
                     </div>
                 </NumberBorderBox>
 
-                <NumberBorderBox className="" numberText={Text02}>
+                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4"  numberText={Text02}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
                             <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">宣伝や案件依頼</h3>
                             <p className="text-size-p mt-3 font-bold leading-4">
                                 自分の事業やイベントの宣伝<br />
                                 仕事依頼や求人募集ができる！<br />
-                                名簿登録すると直接仕事や案件がメンバーから来るかも
+                                名簿登録すると直接仕事や案件が<br />
+                                メンバーから来るかも
                             </p>
                         </div>
-                        <div className="flex flex-col px-1 w-60">
-                            <Image src={About02} alt="Free Business Meeting" />
+                        <div className="flex flex-col px-1 w-60 sm:w-40">
+                            <Image src={About02} alt="Free Business Meeting" className="sm:w-40" />
                         </div>
                     </div>
                 </NumberBorderBox>
-                <NumberBorderBox className="" numberText={Text03}>
+                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4"  numberText={Text03}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
                             <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">朝活とオフィス</h3>
@@ -144,29 +148,30 @@ export default function AboutSection() {
                                 24時間解放のバーチャルオフィスも
                             </p>
                         </div>
-                        <div className="flex flex-col px-1 w-60">
+                        <div className="flex flex-col px-1 w-60 sm:w-40">
                             <Image src={About03} alt="Free Business Meeting" />
                         </div>
                     </div>
                 </NumberBorderBox>
 
-                <NumberBorderBox className="" numberText={Text04}>
+                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4"  numberText={Text04}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
                             <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">部活と委員会</h3>
                             <p className="text-size-p mt-3 font-bold leading-4">
                                 オンラインで交流！<br />
                                 部活は趣味で繋がろう！<br />
-                                委員会はトレンドや事例紹介など会議をしてスキルアップ！
+                                委員会はトレンドや事例紹介など<br />
+                                会議をしてスキルアップ！
                             </p>
                         </div>
-                        <div className="flex flex-col px-1 w-60">
+                        <div className="flex flex-col px-1 w-60 sm:w-40">
                             <Image src={About04} alt="Free Business Meeting" />
                         </div>
                     </div>
                 </NumberBorderBox>
 
-                <NumberBorderBox className="" numberText={Text05}>
+                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4"  numberText={Text05}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
                             <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">情報の相互提供</h3>
@@ -176,13 +181,13 @@ export default function AboutSection() {
                                 自分の事業やクリエイティブに落とし込もう
                             </p>
                         </div>
-                        <div className="flex flex-col px-1 w-60">
+                        <div className="flex flex-col px-1 w-60 sm:w-40">
                             <Image src={About05} alt="Free Business Meeting" />
                         </div>
                     </div>
                 </NumberBorderBox>
 
-                <NumberBorderBox className="w-full !p-0" innerClassName="!pt-0">
+                <NumberBorderBox className="w-full p-4" innerClassName="!pt-0">
                     <div className="flex flex-col p-3 items-center justify-center">
                         <div className="flex flex-col px-1 items-center justify-center text-center">
                             <h3 className="text-title3 font-bold">実際の様子</h3>

@@ -94,7 +94,7 @@ const PlanItem = ({ title, price, content, delay, imageClass, href, src,isRecomm
 
             <div className="flex flex-col items-center justify-center gap-2 py-8 min-w-[180px]">
                 <div>
-                    <h2 className=" text-title3 font-nikokaku text-center">{title}</h2>
+                    <h2 className=" text-title3 sm:text-[2rem] font-nikokaku text-center">{title}</h2>
                     <div className="w-[120px] mx-auto">
                         <hr className="w-full border-font1 border" />
                     </div>

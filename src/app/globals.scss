@@ -75,6 +75,7 @@ div {
     background-size: contain;
     background-position: top;
     background-repeat: repeat;
+    background-size: 548px;
 }
 
 .bg-image4 {
@@ -177,13 +178,13 @@ div {
 /* ページネーションのスタイル */
 .dot-pagination {
     background-color: transparent !important;
-    height: 16px!important;
-    width: 16px!important;
+    height: 16px !important;
+    width: 16px !important;
     background-image: url("/dot2.png") !important;
     background-size: contain !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    outline: none !important    ;
+    outline: none !important;
 }
 
 /* 現在表示されているページネーションのスタイル */

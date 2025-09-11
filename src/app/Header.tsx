@@ -33,92 +33,25 @@ export const Header = () => {
             <header className="flex w-full items-center sticky top-0 mt-0 z-50 bg-black h-[46px] sm:h-[60px] md:h-[80px]">
                 <Link href="/" className='p-2 flex items-center'>
                     <Image src={Logo} alt="Logo" width={200} className='w-[20px] md:w-[32px]' />
-                    <span className='text-[1.1rem] tracking-wide sm:text-[2.1rem] text-white ml-3 mt-1 font-dot'>{resources.siteTitle}</span>
+                    <span className='text-[1.1rem] tracking-wide sm:text-[1.5rem] text-white ml-3 mt-1 font-dot'>{resources.siteTitle}</span>
                 </Link>
-
-                {/* Desktop */}
-                <nav className="flex-1 hidden w-full md:flex gap-6 justify-end py-4 pr-8">
-
-                    <div className='ml-auto' />
-                    {menuItems.map((item, index) => {
-                        return (
-                            <div className="relative group" key={index}>
-                                {item.childlen?.length
-                                    ? (
-                                        <Popover>
-                                            {() => (<>
-                                                <PopoverButton as={Fragment}>
-                                                    {
-                                                        () => <motion.button
-                                                            initial={{ opacity: 0, scale: 0.1 }}
-                                                            animate={{ opacity: 1, scale: 1 }}
-                                                            transition={{ duration: 0.2, delay: index * 0.05 }}
-                                                            onMouseEnter={({ target }) => (target as any)?.click()}
-                                                            className="cursor-pointer text-navigation py-2 inline-block relative outline-0">
-                                                            {item.label}
-                                                        </motion.button>
-                                                    }
-                                                </PopoverButton>
-
-                                                <PopoverPanel
-                                                    transition
-                                                    anchor="bottom"
-                                                    className="w-80 origin-top-right rounded-xl border border-black/5 backdrop-blur-md bg-red-50/70 p-1 transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0"
-                                                >
-                                                    {item.childlen?.map((child, index) => (
-                                                        <motion.div
-                                                            initial={{ opacity: 0, scale: 0.1 }}
-                                                            animate={{ opacity: 1, scale: 1 }}
-                                                            transition={{ duration: 0.2, delay: index * 0.05 }}
-                                                            key={index}>
-                                                            <Link
-                                                                href={child.href}
-                                                                className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-5 hover:bg-red-200/20"
-                                                            >
-                                                                <span>{child.label}</span>
-                                                                {child.label2 && (
-                                                                    <small className="ml-2">{child.label2}</small>
-                                                                )}
-                                                            </Link>
-                                                        </motion.div>
-                                                    ))}
-                                                </PopoverPanel>
-                                            </>)
-                                            }
-                                        </Popover>
-                                    )
-                                    :
-                                    <motion.div
-                                        initial={{ opacity: 0, translateY: "100%", scale: 0.9 }}
-                                        animate={{ opacity: 1, translateY: 0, scale: 1 }}
-                                        transition={{ delay: index * 0.05 }}>
-                                        <Link
-                                            href={item.href}
-                                            className="text-navigation font-bold py-2 inline-block relative "
-                                        >
-                                            {item.label}
-                                        </Link>
-                                    </motion.div>
-                                }
-                            </div>
-                        )
-                    })}
-
-                    <Link
-                        href={resources.links.line}
-                        target='_blank'
-                        className="animate-pulse-scale min-w-32 gap-2 rounded-lg flex font-dot items-center justify-center bg-color2 py-2 px-4 font-semibold focus:outline-none data-[hover]:bg-color2/80">
-                        メンバーになる
-                    </Link>
-                </nav>
 
                 <Link
                     href={resources.links.line}
                     target='_blank'
-                    className="animate-pulse-scale md:hidden font-dot ml-auto mr-3 gap-2 rounded-lg flex items-center justify-center bg-color2 py-2 px-2 focus:outline-none data-[hover]:bg-color2/80">
+                    className="animate-pulse-scale sm:hidden font-dot ml-auto mr-6 gap-2 rounded-lg flex items-center justify-center bg-color2 py-2 px-2 focus:outline-none data-[hover]:bg-color2/80">
                     <div className='text-size1 '>メンバーになる</div>
                     <Image src={Line} alt="Line" className="w-6 mt-1" />
                 </Link>
+
+                <Link
+                    href={resources.links.line}
+                    target='_blank'
+                    className="animate-pulse-scale hidden sm:flex font-dot ml-auto mr-12 gap-2 rounded-lg  items-center justify-center bg-color2 py-2 px-2 focus:outline-none data-[hover]:bg-color2/80">
+                    <div className='text-size1 '>メンバーになる</div>
+                    <Image src={Line} alt="Line" className="w-6 mt-1" />
+                </Link>
+
 
                 {/* Mobile */}
                 {/* <nav className="flex md:hidden gap-6">

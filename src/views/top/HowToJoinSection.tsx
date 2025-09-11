@@ -44,14 +44,27 @@ const data = [
 
 export const HowToJoinSection = () => {
     return <SectionBox disablePx disableMaxWidth className="sm:py-12 md:py-24 !gap-8 bg-black !my-0">
-        <h2 className="text-title1 font-nikokaku w-full pb-4 text-center max-w-lg text-white">
+        <h2 className="text-title1 sm:text-title2 font-nikokaku w-full pb-4 text-center max-w-lg text-white">
             メンバーになるには
         </h2>
 
-        <div className="w-full flex flex-col  px-8" >
+        <div className="w-full flex flex-col sm:flex-row px-8 max-w-screen-md" >
             {
                 data.map((x, i) =>
                     <IntroduceItem
+                        isLast={i === data.length - 1}
+                        key={i}
+                        num={x.num}
+                        delay={i * 200}
+                        title={x.title}
+                        content={x.content}
+                    />
+                )
+            }
+
+            {
+                data.map((x, i) =>
+                    <IntroduceItemDesktop
                         isLast={i === data.length - 1}
                         key={i}
                         num={x.num}
@@ -65,7 +78,6 @@ export const HowToJoinSection = () => {
     </SectionBox>
 }
 
-
 const IntroduceItem = ({ title, content, delay, num, src, isLast }: {
     delay?: number,
     title: ReactNode,
@@ -78,7 +90,7 @@ const IntroduceItem = ({ title, content, delay, num, src, isLast }: {
         <FadeAndSlideScrollTriggerAnimation
             delay={0.2}
             className={clsx(
-                "max-w-80 w-full mx-auto h-full flex flex-col gap-4 relative  pb-8 text-white font-dot",
+                "max-w-80 sm:hidden w-full mx-auto h-full flex flex-col gap-4 relative  pb-8 text-white font-dot",
                 isLast ? "" : "border-x-2 border-white border-dotted"
             )}
         >
@@ -94,6 +106,43 @@ const IntroduceItem = ({ title, content, delay, num, src, isLast }: {
                         {title}
                     </h2>
                     <p className="mt-2">
+                        {content}
+                    </p>
+                </div>
+
+            </div>
+
+        </FadeAndSlideScrollTriggerAnimation>
+    );
+}
+
+const IntroduceItemDesktop = ({ title, content, delay, num, src, isLast }: {
+    delay?: number,
+    title: ReactNode,
+    num: string,
+    content: ReactNode,
+    isLast: boolean,
+    src?: StaticImageData
+}) => {
+    return (
+        <FadeAndSlideScrollTriggerAnimation
+            delay={0.2}
+            className={clsx(
+                "max-w-80 w-full h-auto mx-auto hidden sm:flex flex-col gap-4 relative pb-8 text-white font-dot",
+                isLast ? "border-x-2 border-white border-dotted" : "border-l-2 border-white border-dotted"
+            )}
+        >
+            <div className=" bg-white size-4 flex justify-center items-center absolute left-0  -translate-x-1/2"></div>
+            {isLast &&  <div className="bg-white size-4 flex justify-center items-center absolute right-0  translate-x-1/2"></div>}
+            <div className="flex flex-wrap pr-4">
+                <div className="ml-8 -mt-2">
+                    <h3 className="h-8 flex items-center text-title3 text-color3">
+                        <small className="mr-4">STEP</small> {num}
+                    </h3>
+                    <h2 className="mt-6 text-title4">
+                        {title}
+                    </h2>
+                    <p className="mt-6">
                         {content}
                     </p>
                 </div>

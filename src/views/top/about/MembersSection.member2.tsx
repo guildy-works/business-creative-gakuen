@@ -79,7 +79,7 @@ const OnayamiItem = ({ title, title2, content, delay, colorClass, href, src }: {
                     <Image src={src} alt={title} className="w-full rounded-lg object-cover" />
                 </div>
                 <div className="flex-grow-1 m-auto">
-                    <h3 className="text-title3 font-bold font-dot">{title}</h3>
+                    <h3 className="text-title4 font-bold font-dot">{title}</h3>
                 </div>
             </div>
             <h4 className="text-[1.2rem] leading-8 font-bold font-dot">{title2}</h4>

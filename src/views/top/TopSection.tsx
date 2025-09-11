@@ -49,22 +49,22 @@ export const TopSection = () => {
                     <TypeWriterScrollTriggerAnimation
                         delay={500}
                         tag="h3"
-                        className=" w-full font-dot text-white text-center text-[1.5rem] tracking-tight leading-[2.2rem]"
+                        className="py-2 w-full font-dot text-white text-center text-[1.5rem] tracking-tight leading-[2.2rem]"
                         text="そのアイデア、1人じゃ無理でした…。"
                     />
 
-                    <div className="flex flex-col w-full relative justify-center max-w-lg">
+                    <div className="flex w-full relative justify-center flex-col max-w-screen-lg sm:flex-row sm:justify-center sm:py-12 md:gap-4 lg:gap-8">
                         <FadeAndSlideScrollTriggerAnimation className="" delay={1.2}>
-                            <Image src={comment1} alt="ユーザーコメント1" className="h-10 w-fit" />
+                            <Image src={comment1} alt="ユーザーコメント1" className="-mt-2 h-10 w-fit" />
                         </FadeAndSlideScrollTriggerAnimation>
-                        <FadeAndSlideScrollTriggerAnimation className="-mt-2 ml-auto" delay={1.24}>
+                        <FadeAndSlideScrollTriggerAnimation className="-mt-2 ml-auto sm:ml-0" delay={1.24}>
                             <Image src={comment2} alt="ユーザーコメント2" className="h-10 w-fit" />
                         </FadeAndSlideScrollTriggerAnimation>
                         <FadeAndSlideScrollTriggerAnimation className="-mt-2" delay={1.3}>
                             <Image src={comment3} alt="ユーザーコメント3" className="h-10 w-fit" />
                         </FadeAndSlideScrollTriggerAnimation>
 
-                        <FadeAndSlideScrollTriggerAnimation className=" -mt-2 ml-auto" delay={1.35}>
+                        <FadeAndSlideScrollTriggerAnimation className=" -mt-2 ml-auto sm:ml-0" delay={1.35}>
                             <Image src={comment4} alt="ユーザーコメント4" className="h-10 w-fit" />
                         </FadeAndSlideScrollTriggerAnimation>
                         <FadeAndSlideScrollTriggerAnimation className="-mt-2" delay={1.4}>
