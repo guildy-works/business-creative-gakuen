@@ -28,7 +28,7 @@ export const MembersSection2 = () => {
                     releaseWheel: true,
                     interval: 2000, // 自動再生の間隔
                     speed: 2000, // フェードする時間
-                    arrows: false,
+                    arrows: true,
                     width: 'auto',
                     gap: '1rem',
                     padding: { right: '2rem', left: '2rem', },

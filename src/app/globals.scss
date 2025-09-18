@@ -195,3 +195,28 @@ div {
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
+
+.splide__arrow {
+    display: none !important;
+}
+
+.splide__arrow--next {
+    right: 2em;
+}
+.splide__arrow--prev {
+    left: 2em;
+}
+
+@media screen and (min-width: 600px) {
+    .splide__arrow {
+        display: flex !important;
+        width: 4em !important;
+        height: 4em !important;
+
+        svg {
+            height: 2em !important;
+            width: 2em !important;
+        }
+    }
+
+}
