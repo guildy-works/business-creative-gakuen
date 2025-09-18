@@ -11,15 +11,15 @@ export const footerItems = [
 export const Footer = () => {
     return (
         <footer className="bg-[#b17262] w-full p-4 font-dot">
-            <div className="max-w-6xl mx-auto px-4  w-full ">
-                <ul className="flex gap-２">
+            <div className="max-w-6xl mx-auto px-4  w-full flex flex-col gap-2">
+                <ul className="flex gap-2 mx-auto">
                     {footerItems.map((item, index) => (
                         <motion.li initial={{ opacity: 0, translateY: "100%", scale: 0.9 }}
                             viewport={{ once: true }}
                             whileInView={{ opacity: 1, translateY: 0, scale: 1 }}
                             transition={{ duration: 0.2, delay: index * 0.05 }}
                             key={item.label}>
-                            <Link href={item.href} className="ml-3 flex text-size3 text-black fill-black items-center">
+                            <Link href={item.href} className="ml-3 flex text-size2 text-black fill-black items-center">
                                 <svg width="8" height="8" viewBox="0 0 8 10" fill="black" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8 5L0 10L0 0L8 5Z"  />
                                 </svg>
