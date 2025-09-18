@@ -201,10 +201,10 @@ div {
 }
 
 .splide__arrow--next {
-    right: 2em;
+    right: 2em !important;
 }
 .splide__arrow--prev {
-    left: 2em;
+    left: 1em !important;
 }
 
 @media screen and (min-width: 600px) {
