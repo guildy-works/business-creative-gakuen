@@ -19,7 +19,7 @@ export const Footer = () => {
                             whileInView={{ opacity: 1, translateY: 0, scale: 1 }}
                             transition={{ duration: 0.2, delay: index * 0.05 }}
                             key={item.label}>
-                            <Link href={item.href} className="ml-3 flex text-size2 text-black fill-black items-center">
+                            <Link href={item.href} className="ml-3 flex text-size3 sm:text-size2 text-black fill-black items-center">
                                 <svg width="8" height="8" viewBox="0 0 8 10" fill="black" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8 5L0 10L0 0L8 5Z"  />
                                 </svg>
