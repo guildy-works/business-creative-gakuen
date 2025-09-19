@@ -20,7 +20,7 @@ export const TopSection = () => {
     const [isOpeningAnimationComplete, setIsOpeningAnimationComplete] = useState(false);
 
     return (
-        <div className="w-full mx-auto relative max-h-[1200px] flex flex-col bg-[#009fe8]" style={{ minHeight: 'calc(100svh - 46px)' }}>
+        <div className="w-full mx-auto relative max-h-[1200px] flex flex-col bg-[#009fe8] sm:!min-h-[800px]" style={{ minHeight: 'calc(100svh - 46px)' }}>
             <OpeningAnimation onOpeningAnimationCompleted={() => setIsOpeningAnimationComplete(true)} />
 
             {isOpeningAnimationComplete && (<>
@@ -138,4 +138,5 @@ const Campaign = () => <>
             </div>
         </FadeAndSlideScrollTriggerAnimation>
     </div>
+
 </>
