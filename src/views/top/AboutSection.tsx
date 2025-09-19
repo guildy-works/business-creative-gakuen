@@ -104,7 +104,7 @@ export default function AboutSection() {
                 <Image src={decoration1} alt="Background" className="animate-pulse-y" />
             </FadeAndSlideScrollTriggerAnimation>
 
-            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center max-w-screen-md">
+            <div className="flex flex-col sm:flex-row flex-wrap align-strech items-center justify-center max-w-screen-md">
                 <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4" numberText={Text01}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
@@ -207,6 +207,7 @@ export default function AboutSection() {
 
     );
 }
+
 
 
 
