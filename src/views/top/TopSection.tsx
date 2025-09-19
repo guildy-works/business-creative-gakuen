@@ -20,12 +20,12 @@ export const TopSection = () => {
     const [isOpeningAnimationComplete, setIsOpeningAnimationComplete] = useState(false);
 
     return (
-        <div className="w-full mx-auto relative max-h-[1200px] flex flex-col bg-[#009fe8]" style={{ minHeight: 'calc(100svh - 46px)',objectPosition:"bottom" }}>
+        <div className="w-full mx-auto relative max-h-[1200px] flex flex-col bg-[#009fe8]" style={{ minHeight: 'calc(100svh - 46px)' }}>
             <OpeningAnimation onOpeningAnimationCompleted={() => setIsOpeningAnimationComplete(true)} />
 
             {isOpeningAnimationComplete && (<>
                 <div className="flex-grow relative flex flex-col justify-center items-center overflow-hidden">
-                    <Image src={Grassland2} alt="Grassland" className='absolute inset-0 size-full object-cover m-auto' />
+                    <Image src={Grassland2} alt="Grassland" className='absolute inset-0 size-full object-cover m-auto' style={{ objectPosition:"bottom" }} />
 
                     <div className='py-7 flex flex-col gap-4 justify-center z-10'>
                         <div className='flex flex-col justify-center items-center px-8 py-6 gap-4'>
@@ -140,5 +140,6 @@ const Campaign = () => <>
     </div>
 
 </>
+
 
 
