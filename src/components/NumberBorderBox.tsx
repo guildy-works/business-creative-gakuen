@@ -9,7 +9,7 @@ export const NumberBorderBox = ({ children, className, innerClassName, numberTex
         <FadeAndSlideScrollTriggerAnimation
             className={clsx(
                 className)}
-                style={{ height: '-webkit-fill-available' }}
+                style={{ height: 'auto' }}
         >
             <div style={{ outlineStyle: "solid" }}
                 className={clsx("rounded-xl relative top-0 w-full h-full",
@@ -28,4 +28,5 @@ export const NumberBorderBox = ({ children, className, innerClassName, numberTex
             </div>
         </FadeAndSlideScrollTriggerAnimation>
     );
+
 }

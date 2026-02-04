@@ -27,7 +27,7 @@ import { FadeAndSlideScrollTriggerAnimation } from "@/libs/ScrollTriggerAnimatio
 export default function AboutSection() {
     return (
         <div
-            className="relative  flex flex-col items-center justify-center max-w- sm:max-w-full sm:max-w- mx-auto gap-12 py-8 px-8 sm:px-8"
+            className="relative  flex flex-col items-center sm:max-w-full mx-auto gap-12 py-8 px-8 sm:px-8"
         >
             <div className="bg-image absolute inset-0 m-auto max-w-6xl" />
 
@@ -105,7 +105,7 @@ export default function AboutSection() {
                 <Image src={decoration1} alt="Background" className="animate-pulse-y" />
             </FadeAndSlideScrollTriggerAnimation>
 
-            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center max-w-screen-md">
+            <div className="flex flex-col sm:flex-row flex-wrap align-strech items-center justify-center max-w-screen-md">
                 <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4" numberText={Text01}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
@@ -208,5 +208,7 @@ export default function AboutSection() {
 
     );
 }
+
+
 
 
