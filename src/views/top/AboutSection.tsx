@@ -32,11 +32,12 @@ export default function AboutSection() {
             <div className="bg-image absolute inset-0 m-auto max-w-6xl" />
 
             <BlackTextBox className="text-center !p-8 !py-6" isOutline={false}>
-                <h2 className="text-title2 font-nikokaku tracking-tighter">出会いから<span className="text-color2">アイデア</span>を</h2>
-                <h3 className="text-[1.1rem] tracking-[0.08rem] mt-2 font-nikokaku">
+                <h2 className="text-[2.6rem] sm:text-title2  font-nikokaku tracking-tighter"> 人脈と<span className="text-color2">スキル</span>が集う場所</h2>
+
+                {/* <h3 className="text-[1.1rem] tracking-[0.08rem] mt-2 font-nikokaku">
                     <span className="text-red-600">初心者から上級者</span>
                     が集まり、スキルアップを実現
-                </h3>
+                </h3> */}
             </BlackTextBox>
 
             <div className="flex flex-col sm:flex-row gap-12 flex-wrap justify-center">
@@ -49,7 +50,7 @@ export default function AboutSection() {
                     <div>
                         <h2 className="text-title4 font-bold">
                             <span>中四国最大級</span><br />
-                            <span >オンラインコミュニティ</span>
+                            <span >クリエイターコミュニティ</span>
                         </h2>
                         <h3 className="text-size-p mt-4 font-dot pr-24">
                             ビジネスに必要な<br />
@@ -68,8 +69,8 @@ export default function AboutSection() {
                     </div>
                     <div>
                         <h2 className="text-title4 font-bold">
-                            <span>経営者や</span><br />
-                            <span >フリーランスと共創</span>
+                            <span>企業や</span><br />
+                            <span >フリーランスと繋がる</span>
                         </h2>
                         <h3 className="text-size-p mt-4 font-dot  pr-20">
                             中四国で活躍している<br />
@@ -108,7 +109,7 @@ export default function AboutSection() {
                 <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4" numberText={Text01}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
-                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">メンバー交流</h3>
+                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">イベント交流</h3>
                             <p className="text-size-p mt-3 font-bold leading-4">
                                 交流会やトークイベントなど、<br />
                                 色んなイベントを毎月開催してます！<br />
@@ -122,10 +123,10 @@ export default function AboutSection() {
                     </div>
                 </NumberBorderBox>
 
-                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4"  numberText={Text02}>
+                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4" numberText={Text02}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
-                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">宣伝や案件依頼</h3>
+                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">宣伝や案件募集</h3>
                             <p className="text-size-p mt-3 font-bold leading-4">
                                 自分の事業やイベントの宣伝<br />
                                 仕事依頼や求人募集ができる！<br />
@@ -138,14 +139,14 @@ export default function AboutSection() {
                         </div>
                     </div>
                 </NumberBorderBox>
-                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4"  numberText={Text03}>
+                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4" numberText={Text03}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
-                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">朝活とオフィス</h3>
+                            <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">朝活と夜活</h3>
                             <p className="text-size-p mt-3 font-bold leading-4">
-                                毎日みんなで朝活をし<br />
-                                習慣化させ1日の生産性をUP！<br />
-                                24時間解放のバーチャルオフィスも
+                                朝活で1日の生産性がUP！<br />
+                                夜は集中力のゴールデンタイム<br />
+                                スキルを積み上げよう
                             </p>
                         </div>
                         <div className="flex flex-col px-1 w-60 sm:w-40">
@@ -154,7 +155,7 @@ export default function AboutSection() {
                     </div>
                 </NumberBorderBox>
 
-                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4"  numberText={Text04}>
+                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4" numberText={Text04}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
                             <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">部活と委員会</h3>
@@ -171,7 +172,7 @@ export default function AboutSection() {
                     </div>
                 </NumberBorderBox>
 
-                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4"  numberText={Text05}>
+                <NumberBorderBox className="sm:w-1/2 md:w-1/3 h-fit p-4" numberText={Text05}>
                     <div className="flex p-2">
                         <div className="flex flex-col px-1">
                             <h3 className="border-b border-black mr-auto pb-2 text-title4 font-bold">情報の相互提供</h3>
@@ -191,10 +192,10 @@ export default function AboutSection() {
                     <div className="flex flex-col p-3 items-center justify-center">
                         <div className="flex flex-col px-1 items-center justify-center text-center">
                             <h3 className="text-title3 font-bold">実際の様子</h3>
-                            <p className="text-size-p font-bold leading-4">
+                            {/* <p className="text-size-p font-bold leading-4">
                                 <Link href={resources.links.discordOfficial} target="_blank" className="text-color10 underline" rel="noopener noreferrer">Discord</Link>
                                 という無料アプリを使用します
-                            </p>
+                            </p> */}
                         </div>
                         <div className="flex flex-col px-1 w-full mt-2">
                             <Image src={About06} alt="Free Business Meeting" />

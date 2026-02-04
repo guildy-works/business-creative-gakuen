@@ -27,7 +27,7 @@ export const PlansSection = () => {
                             <li>イベントの参加</li>
                             <li>地域やビジネス情報の受け取り</li>
                             <li>求人や案件、仕事への応募</li>
-                            <li>部活動やチャット交流</li>
+                            <li>チャット交流</li>
                         </ul>}
                         imageClass="h-14"
                         src={character1}
@@ -39,9 +39,9 @@ export const PlansSection = () => {
                         content={<ul className="list-[disclosure-closed] text-size2 font-bold leading-4 px-2">
                             <li>フリープラン機能</li>
                             <li>交流会が全て無料</li>
-                            <li>投稿や宣伝し放題</li>
-                            <li>メンバー情報一覧確認</li>
-                            <li>朝活、自習室、委員会の参加</li>
+                            <li>宣伝や求人の投稿し放題</li>
+                            <li>ビジネスマッチングし放題</li>
+                            <li>朝活と夜活の参加</li>
                         </ul>}
                         src={character2}
                     />

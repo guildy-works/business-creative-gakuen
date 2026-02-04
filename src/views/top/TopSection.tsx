@@ -45,13 +45,13 @@ export const TopSection = () => {
                     </div>
                 </div>
 
-                <div className="relative bg-black flex flex-col items-center justify-center gap-4 p-8">
-                    <TypeWriterScrollTriggerAnimation
+                <div className="relative bg-black flex flex-col items-center justify-center gap-4 p-8 pt-12 ">
+                    {/* <TypeWriterScrollTriggerAnimation
                         delay={500}
                         tag="h3"
                         className="py-2 w-full font-dot text-white text-center text-[1.5rem] tracking-tight leading-[2.2rem]"
                         text="そのアイデア、1人じゃ無理でした…。"
-                    />
+                    /> */}
 
                     <div className="flex w-full relative justify-center flex-col max-w-screen-lg sm:flex-row sm:justify-center sm:py-12 md:gap-4 lg:gap-8">
                         <FadeAndSlideScrollTriggerAnimation className="" delay={1.2}>
@@ -78,10 +78,14 @@ export const TopSection = () => {
                     </div>
 
                     <FadeAndSlideScrollTriggerAnimation className="relative w-full mx-auto" delay={1.5}>
-                        <Image src={Balloon} alt="吹き出し" className="mx-auto h-32" />
-                        <div className="absolute font-dot top-0 left-0 inset-0 flex justify-center items-center text-center leading-8 pb-3 text-title4">
-                            こんな悩みを持つ<br />
-                            中四国の全クリエイターへ
+                        <Image src={Balloon} alt="吹き出し" className="mx-auto h-32 w-full max-w-screen-sm" />
+                        <div className="absolute font-dot top-0 left-0 inset-0 flex justify-center items-center text-center leading-8 pb-4 text-title4">
+                            <div>
+                                <div className="leading-10 text-title3">こんな悩みを持つ</div>
+                                <div className="leading-10 text-title3">
+                                    <span className="text-red-600">クリエーター</span>と<span className="text-red-600">マーケター</span>
+                                </div>
+                            </div>
                         </div>
                     </FadeAndSlideScrollTriggerAnimation>
 

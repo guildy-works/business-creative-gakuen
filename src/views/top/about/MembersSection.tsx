@@ -54,7 +54,7 @@ const Comments = () => {
             <TypeWriterScrollTriggerAnimation
                 onComplete={() => setIndex(index + 1)}
                 span={25}
-                tag="div" className="overflow-hidden" text="ココは学園ではありません。RPGです。" />
+                tag="div" className="overflow-hidden" text="ココは中四国のクリエイターが集まる場所。" />
 
             <TypeWriterScrollTriggerAnimation
                 desableInView
